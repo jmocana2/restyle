@@ -1,0 +1,2362 @@
+/*ESTILOS GENERICOS A3MEDIA*/
+/*MODIFICADOS PARA A3WF*/
+/*ENERO 2017 POR JOSE MARIA MUÑOZ MARIN*/
+
+@import url("/a3wf/resources/style/rutasCSS.css");
+
+/*logo pagina principal*/
+#logo img {
+    height: auto !important;
+    width: 8rem !important;
+    margin-left: 20px !important;
+}
+
+/*ajusto el alto del menu para dar espacio al logo*/
+.gecko #layout-menu-cover{
+	top: 6rem !important;
+}
+
+.ie #layout-menu-cover{top: 6rem !important;}
+.chrome #layout-menu-cover{top: 6rem !important;}
+
+#layout-portlets-cover{
+	padding: 7rem 2rem 3rem 2rem !important;
+	font-size: 12px !important;
+	background-color: #FFF !important;
+}
+
+#layout-portlets-cover-simple{
+	padding: 1rem 2rem 3rem 2rem !important;
+	font-size: 12px !important;
+	background-color: #FFF !important;
+}
+
+/*titulo de la aplicacion*/
+#tituloAplicacion{
+	 position: relative;
+	 left: 10px;
+	 top: 4px;
+	 color: #fff !important;
+	 font-family: verdana !important;
+}
+
+/*color de fondo de la cabecera*/
+#layout-topbar-cover {
+    background-color: #000 !important;
+    color: #fff !important;
+    padding: 0 !important;
+    z-index: 1000 !important;  
+}
+
+/*contenedor menu principal*/
+#layout-menu-cover{
+	background-color: #2D353C !important;
+	padding: 0px  0px !important;
+	width: 340px !important; /*ojo esto seguramente habra que regularlo a distintas resoluciones*/
+	height: 100% !important;
+	max-height: 100% !important;
+	color: #000 !important;
+	box-shadow: 2px 2px 2px #2D353C;
+	padding-top: 20px !important;
+	/*overflow-y: scroll !important;*/
+	display: none;
+}
+
+/*contenedor menu buscador derecho*/
+#layout-menu-cover-buscadorDerecho{
+	background-color: #2D353C !important;
+	padding: 0px 0px !important;
+	width: 345px !important; /*ojo esto seguramente habra que regularlo a distintas resoluciones*/
+	height: 100% !important;
+	max-height: 100% !important;
+	color: #000 !important;
+	box-shadow: -2px 10px 2px #2D353C;
+	padding-top: 20px !important;
+	/*overflow-y: scroll !important;*/
+	display: none;	
+	position: fixed !important;
+	right: 0px;
+	z-index: 100;
+}
+
+/*contenedor notificaciones*/
+#layout-menu-cover-notificaciones{
+	background-color: #2D353C !important;
+	padding: 0px 0px !important;
+	width: 345px !important; /*ojo esto seguramente habra que regularlo a distintas resoluciones*/
+	height: 100% !important;
+	max-height: 100% !important;
+	color: #000 !important;
+	box-shadow: -2px 10px 2px #2D353C;
+	padding-top: 20px !important;
+	/*overflow-y: scroll !important;*/
+	display: none;	
+	position: fixed !important;
+	right: 0px;
+	z-index: 100;
+}
+
+#layout-topbar{
+	margin-top: -10px !important;
+    margin-bottom: -10px !important;
+}
+
+/*color de fondo del cuerpo*/
+
+body {
+    /*background-color: #F0F2F5 !important;*/
+    background-color: #FFF !important;
+    
+}
+
+
+#moduloUsuario{
+	color: #FFF !important;
+	background-color: #999 !important;
+	padding-bottom: 5px !important; 
+	padding-top: 0px !important;
+	border-top: solid 1px #FFF !important;
+	/*margin-top: -5px !important;*/
+}
+
+/*menu superior derecho*/
+#topbar-menu > li a i {
+    color: #FFF !important;
+	padding-top: 0.8rem !important;
+}
+
+#topbar-menu > li a {
+	padding-right: 0.8rem !important;
+    padding-left: 0.8rem !important;
+}
+
+#topbar-menu > li a:hover {
+	background-color: #999 !important;
+}
+
+#topbar-menu{
+	margin-right: 10px !important;
+}
+
+/*borde de botones grises de los listados*/
+.GrayButton .ui-button-text {
+    border: solid 1px #ccc !important;
+}
+
+
+/*estilos de cabeceras de las tablas*/
+
+.ui-datatable table thead tr th, .ui-datatable table tfoot tr td, .ui-datatable table thead tr th {
+    font-size: 12px !important;
+}
+
+.ui-datatable .ui-datagrid-header,
+.ui-datatable .ui-datatable-header,
+.ui-datatable .ui-datatable-subtable-header,
+.ui-datatable .ui-datatable-summaryrow{
+	background-color: transparent !important;
+	color: gray !important;
+}
+
+/*cabeceras de los listados en movil ponerlos en negrita*/
+.ui-datatable-reflow .ui-datatable-data td .ui-column-title {
+    font-weight: bolder;
+    text-align: left !important;
+}
+
+/*bug contenido en los listados*/
+.ui-datatable-data tr td{width: 85% !important; height:100% !important; opacity: 1.0 !important;}
+
+/*navegador de pestañas*/
+
+.ui-tabs-top{
+	border: solid 1px #d5d6d8 !important;
+	background-color: #fff !important;
+}
+
+.ui-tabs-panel .Card{
+	border: none !important;
+}
+
+.ui-tabs-top .ui-tabs-nav{
+	background: #f0f2f4; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f6f7f9, rgba(0, 0, 0, 0.2)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f6f7f9, rgba(0, 0, 0, 0.2)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f6f7f9, rgba(0, 0, 0, 0.2)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f6f7f9, rgba(0, 0, 0, 0.2)); /* Standard syntax */
+}
+
+.ui-tabs-top .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs-top .ui-tabs-nav li.ui-tabs-active a, .ui-tabs-top .ui-tabs-nav li.ui-state-hover a {
+    color: #000 !important;
+}
+
+.ui-tabs-top .ui-tabs-nav li a {
+    color: #000 !important;
+    font-size: 14px !important;
+    cursor: pointer !important;
+}
+
+.ui-tabs-top .ui-tabs-nav li.ui-state-hover {
+    background-color: #ccc !important;
+    border: solid 1px #fff !important;
+    border-radius: 2px;
+}
+
+.ui-tabs-top .ui-tabs-nav li.ui-state-active {
+	font-weight: bolder !important;
+	cursor: pointer !important;
+}
+
+
+/*borders de las tablas*/
+/*
+.ui-datatable table tbody tr td,
+.ui-datatable table thead tr th,
+.ui-datatable table tfoot tr td,
+.ui-datatable table thead tr th 
+{border: none !important;}*/
+
+/*cabeceras con filtro de las tablas*/
+.ui-datatable th .ui-inputfield{
+	font-size: 13px !important;
+	margin-top: 5px;
+}
+
+.ui-datatable .ui-sortable-column {
+    vertical-align: bottom;
+}
+
+th.ui-filter-column{
+	vertical-align: bottom !important;
+}
+
+
+
+/* tamaño de fuente del contenido de la tabla*/
+.ui-datatable table tbody tr td{
+	font-size: 12px !important;
+}
+
+/*buscador cabecera de las tablas*/
+/*.ui-datatable .ui-datagrid-header, .ui-datatable .ui-datatable-header, .ui-datatable .ui-datatable-subtable-header, .ui-datatable .ui-datatable-summaryrow {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: normal;
+    padding-right: 20px !important;
+}*/
+
+/*filas seleccionadas*/
+.ui-datatable table tbody .ui-state-highlight > td {
+    background-color: #208bc6 !important;
+    color: #ffffff !important;
+}
+
+/*cabecera de listado con buscador*/
+.ui-datatable table thead tr th.ui-state-active,
+.ui-datatable .ui-datatable-sticky table thead tr th.ui-state-active {
+    background-color: #208bc6 !important; /*no se lo come*/
+    color: #fff;
+}
+
+
+/*
+para quitar el espacio de la izquierda al datalist
+.ui-datalist .ui-datalist-content .ui-datalist-data {
+	padding-left: 5px !important;
+}
+
+/*checkbox y radiobutton*/
+/*
+.ui-radiobutton .ui-state-active .ui-icon-bullet, .ui-radiobutton .ui-state-focus .ui-icon-bullet{
+	background-color: #0288D1;
+	border-color: #455A64 !important;
+}
+
+.ui-radiobutton .ui-state-hover, .ui-radiobutton .ui-state-active{
+	border-color: #455A64 !important;
+}
+
+.ui-chkbox-box .ui-icon-check{
+	border-bottom: solid 3px #000;
+	border-right: solid 3px #000;
+}
+*/
+
+/*objeto calendario*/
+.ui-datepicker-calendar tbody tr .ui-datepicker-current-day {
+    background-color: #546e7a;
+    border: solid 1px #455A64;
+    color: #455A64 !important;
+}
+
+.ui-datepicker-calendar tbody tr .ui-datepicker-current-day a{
+    color: #455A64 !important;
+}
+
+.ui-datepicker-calendar tbody tr .ui-datepicker-today a {
+    color: #546e7a !important;
+    font-weight: bolder !important;
+}
+
+.ui-datepicker-calendar tbody tr td a.ui-state-hover,
+.ui-datepicker-calendar tbody tr td.ui-state-hover,
+.ui-datepicker-calendar tbody tr td:hover {
+    background-color: #546e7a !important;
+    color: #fff !important;
+    /*border: solid 1px #546e7a;*/
+}
+
+.ui-datepicker-calendar tbody tr .ui-datepicker-today {
+    background-color: #ffffff;
+    border: solid 1px #546e7a;
+}
+
+.ui-datepicker-calendar tbody tr td a {
+    color: #455A64 !important;
+}
+
+.ui-datepicker .ui-datepicker-title select{
+	font-size: 0.7em !important;
+}
+
+.ui-timepicker-div .ui-widget-header{
+	background-color: #546e7a !important;
+}
+
+
+/*eliminacion de algunos bordes*/
+
+/*.ui-datalist,
+.ui-datagrid,
+.ui-panelgrid-cell,
+.ui-panelgrid{
+	border: none !important;
+}*/
+
+.ui-panelgrid thead tr td, .ui-panelgrid tfoot tr td {
+	color: #546e7a;
+	background-color: #eff3f5;
+	border: solid 1px #c6d6df !important;
+}
+/*
+componente acordeon
+
+.ui-accordion-header{
+	background-color: #039be5 !important;
+}
+
+.ui-accordion .ui-accordion-header.ui-state-hover,
+.ui-accordion .ui-accordion-header.ui-state-active {
+    background-color: #0288D1 !important;
+}
+
+componente commandlink
+
+.ui-commandlink {
+    color: #546e7a !important;
+}
+
+.ui-commandlink:hover{
+	color: #0288D1 !important;
+}
+
+mejora mensajes de error
+
+.ui-message-info{
+	background: linear-gradient(to right,  #cccccc , #fff);
+	border-style: solid !important;
+	color: #000 !important;
+    font-size: 12px !important;
+	font-weight: bolder !important;
+}
+
+/*mensajes de error*/
+.ui-growl{
+	width: 33% !important;
+	left: 35%;
+}
+
+.ui-growl-message{
+	width: 90% !important;
+	font-weight: normal !important;
+	text-transform: uppercase !important;
+	color: green !important;
+}
+
+ .ui-growl-title{
+ 	width: 90% !important;
+ 	font-weight: bolder !important;
+ 	text-transform: uppercase !important;
+ 	margin-top:5px !important;
+ 	color: #746E7A !important;
+ }
+ 
+/*UTILIDADES*/
+*.wAuto {width:auto !important;}
+*.w2 {width:1.9% !important;}
+*.w3 {width:2.9% !important;}
+*.w4 {width:3.9% !important;}
+*.w5 {width:4.9% !important;}
+*.w6 {width:5.9% !important;}
+*.w8 {width:7.9% !important;}
+*.w10 {width:9.9% !important;}
+*.w12 {width:11.9% !important;}
+*.w15 {width:14.9% !important;}
+*.w20 {width:19.9% !important;}
+*.w25 {width:24.9% !important;}
+*.w30 {width:29.9% !important;}
+*.w33 {width:32.9% !important;}
+*.w35 {width:34.9% !important;}
+*.w40 {width:39.9% !important;}
+*.w45 {width:45.9% !important;}
+*.w50 {width:49.9% !important;}
+*.w55 {width:54.9% !important;}
+*.w60 {width:59.9% !important;}
+*.w65 {width:64.9% !important;}
+*.w70 {width:69.9% !important;}
+*.w75 {width:74.9% !important;}
+*.w80 {width:80.0% !important;}
+*.w83 {width:82.9% !important;}
+*.w85 {width:84.9% !important;}
+*.w90 {width:89.9% !important;}
+*.w92 {width:91.9% !important;}
+*.w95 {width:94.9% !important;}
+*.w98 {width:98% !important;}
+*.w99 {width:99% !important;}
+*.w100 {width:100% !important;}
+
+*.h5{height: 5% !important;}
+*.h10{height: 10% !important;}
+*.h15{height: 15% !important;}
+*.h20{height: 20% !important;}
+*.h25{height: 25% !important;}
+*.h30{height: 30% !important;}
+*.h35{height: 35% !important;}
+*.h40{height: 40% !important;}
+*.h45{height: 45% !important;}
+*.h50{height: 50% !important;}
+*.h55{height: 55% !important;}
+*.h60{height: 60% !important;}
+*.h65{height: 65% !important;}
+*.h70{height: 70% !important;}
+*.h75{height: 75% !important;}
+*.h80{height: 80% !important;}
+*.h85{height: 85% !important;}
+*.h90{height: 90% !important;}
+*.h95{height: 85% !important;}
+*.h100{height: 100% !important;}
+
+.justificado,
+.justify {
+	text-align: justify !important;
+}
+
+.center, .Center {
+   text-align:center !important;
+}
+
+.right {
+   text-align:right !important;
+}
+
+.noBorder{
+	border-style: none !important;
+}
+
+.noFondo{
+	background-color: transparent !important;
+}
+
+.fondoTransparente, .fondotransparente{
+	background-color: transparent !important;
+}
+
+.margenesCentrados{
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+.FontBold{font-weight: bolder !important;}
+
+.enlaceGrisNaranja{
+					color: #455A64 !important;
+					text-decoration: none !important;
+					cursor: pointer !important;
+}
+.enlaceGrisNaranja:hover{
+					color: #FFA676 !important;
+					text-decoration: none !important;
+					cursor: pointer !important;
+}
+
+.enlaceNaranjaGris{
+					color: #FA743E !important; #FFA676 !important;
+					text-decoration: none !important;
+					cursor: pointer !important;
+}
+.enlaceNaranjaGris:hover{
+					color: #455A64 !important;
+					text-decoration: none !important;
+					cursor: pointer !important;
+}
+
+/*enlace negro gris, originalmente negro en estado reposo*/
+/*ahora es gris en reposo, negro y subrayado en el hover*/
+.enlaceNegro{
+	color: #333 !important;
+	text-decoration: none !important;
+}
+
+.enlaceNegro:hover{
+	color: #000 !important;
+	text-decoration: underline !important;
+}
+
+.enlaceBlanco{
+	color: #fff !important;
+	text-decoration: none !important;
+}
+
+.enlaceBlanco:hover{
+	color: #fff !important;
+	text-decoration: underline !important;
+}
+
+.fondoMostaza{
+	background-color: #eac463 !important;
+}
+
+.fondoNegro{
+	background-color: #000 !important;
+}
+
+.fondoBlanco{
+	background-color: #fff !important;
+}
+
+.mostaza{
+	color: #eac463 !important;
+}
+
+.gris, .gray, .Gris, .Gray{
+	color: #ccc !important;
+}
+
+.oculto{
+	display: none;
+}
+
+.textoNegro{
+	color: #000 !important;
+}
+
+.subrayado{
+	text-decoration: underline !important;
+}
+
+.enlaceSubrayado:hover{
+	text-decoration: underline !important;
+}
+
+.noSubrayado{
+	text-decoration: none !important;
+}
+
+.enlaceNoSubrayado{
+	text-decoration: none !important;
+}
+
+.enlaceNoSubrayado:hover{
+	text-decoration: none !important;
+}
+
+.bordeBlanco, .bordeblanco{
+	border: solid 1px #FFFFFF  !important;
+}
+
+/*Font Sizes**/
+.Fs8{font-size:8px !important;} 
+.Fs7{font-size:7px !important;}
+
+.Responsive98 {
+    width: 98%;
+    float: left;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.Responsive96 {
+    width: 96%;
+    float: left;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+
+.Responsive70 {
+    width: 70%;
+    float: left;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.Responsive60 {
+    width: 60%;
+    float: left;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.Responsive40 {
+    width: 40%;
+    float: left;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.Responsive20 {
+    width: 20%;
+    float: left;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.Responsive66 {
+    width: 66%;
+    float: left;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.Container45{
+	width: 45%;
+}
+
+.Container55{
+	width: 55%;
+}
+
+.Container46{
+	width: 46%;
+}
+
+.Container47{
+	width: 47%;
+}
+
+.Container95{
+	width: 95%;
+}
+
+/*contenedor especifico creado por mi para poder poner a la derecha elementos, el que trae rio no lo hace bien*/
+
+.Container70Fright{ 
+	width: 69%;
+	float: right !important;
+}
+
+.Container60Fright{ 
+	width: 59%;
+	float: right !important;
+}
+
+.Container50Fright{ 
+	width: 49%;
+	float: right !important;
+}
+
+.Container40Fright{ 	
+	width: 40%;
+	float: right !important;
+}
+
+.Container30Fright{ 	
+	width: 30%;
+	float: right !important;
+}
+
+.Container30{padding-top: 0px !important;}
+
+.Container20Fright{ 	
+	width: 20%;
+	float: right !important;
+}
+
+.Container80NoPadding{
+	width: 80%;
+    box-sizing: border-box;
+}
+
+.bordePrueba, .bordeprueba{border: solid 1px red !important;}
+.tabla{display: table !important; }
+.columna{display: table-column !important;}
+.fila{display: table-row !important;}
+.celda{display: table-cell !important; vertical-align: top !important; padding-right: 10px; padding-bottom: 10px;}
+.celdaNoPadding{display: table-cell !important;}
+.inlineFlex{display: inline-flex !important;}
+.mays{text-transform: uppercase !important;}
+
+.cursorPointer{cursor: pointer !important;}
+
+@media (min-width: 961px){
+	.ShowOnMobile {
+	    display: none !important;
+	    opacity: 0;
+	}
+}
+
+.padding10{
+	padding: 10px !important;
+}
+
+.padding5{
+	padding: 5px !important;
+}
+
+.padding0, .noPadding, .NoPadding, .noPadding, .noPaddin{
+	padding: 0px !important;
+}
+
+/* Margins */
+.MarTopPerc5{margin-top:5%;}
+.MarTopPerc10{ margin-top:10%;}
+.MarTopPerc20{ margin-top:20%;}
+.MarTopPerc30{ margin-top:30%;}
+.MarTopPerc40{ margin-top:40%;}
+.MarTopPerc50{ margin-top:50%;}
+
+.MarAuto{ margin-left:auto; margin-right:auto;}
+
+.MarTop5{ margin-top:5px;}
+.MarTop10{ margin-top:10px;}
+.MarTop20{ margin-top:20px;}
+.MarTop30{ margin-top:30px;}
+.MarTop40{ margin-top:40px;}
+.MarTop50{ margin-top:50px;}
+
+.MarTopQuarter{ margin-top:25%;}
+.MarTopHalf{ margin-top:50%;}
+
+.MarBot10{ margin-bottom:10px;}
+.MarBot20{ margin-bottom:20px;}
+.MarBot30{ margin-bottom:30px;}
+.MarRight10{ margin-right:10px;}
+.MarRight15{ margin-right:15px;}
+.MarRight20{ margin-right:20px;}
+.MarRight30{ margin-right:30px;}
+.MarLeft10{ margin-left:10px;}
+.MarLeft15{ margin-left:15px;}
+.MarLeft20{ margin-left:20px;}
+.MarLeft30{ margin-left:30px;}
+
+/*SHOW ONLY IN CHROME*/
+
+.chrome .showInChrome{display: block !important;}
+.gecko 	.showInChrome{display: none !important;}
+.ie 	.showInChrome{display: none !important;}
+
+/*SHOW ONLY IN FIREFOX*/
+
+.gecko 	.showInFirefox{display: block !important;}
+.chrome .showInFirefox{display: none !important;}
+.ie 	.showInFirefox{display: none !important;}
+
+/*SHOW ONLY IN iexplorer*/
+
+.ie 	.showInExplorer{display: block !important;}
+.gecko 	.showInExplorer{display: none !important;}
+.chrome .showInExplorer{display: none !important;}
+
+/*soluciones para movil
+
+@media all and (max-width: 480px){
+	.ui-paginator .ui-paginator-current{
+		font-size: 12px !important;
+	}
+}
+
+ botones con icono pequeños en movil y tablets
+ 
+ @media all and (max-width: 1024px) and (min-width:801px){
+	 .ui-button-icon-only {
+	    min-width: 30px !important;
+	    max-width: 30px !important;
+	    border-radius: 30px !important;
+	    -webkit-border-radius: 30px !important;
+	    -moz-border-radius: 30px !important;
+	    min-height: 30px !important;
+	    max-height: 30px !important;
+	}
+}
+
+@media (max-width: 800px){
+	.ui-button-icon-only {
+	    min-width: 25px !important;
+	    max-width: 25px !important;
+	    border-radius: 30px !important;
+	    -webkit-border-radius: 30px !important;
+	    -moz-border-radius: 30px !important;
+	    min-height: 25px !important;
+	    max-height: 25px !important;
+	}
+	
+	.ui-paginator .ui-paginator-current {
+	    font-size: 10px;
+	    padding: 10px;
+	    color: #fff;
+	    font-family: 'roboto_condensedlight';
+	}
+}
+
+componente carousel
+
+.ui-carousel .ui-carousel-header {
+    background-color: #0288D1;
+    padding: 10px 20px !important;
+}
+
+.ui-carousel .ui-carousel-header{
+	font-size: 15px !important;
+}
+
+.carouselSinCabecera .ui-carousel-header{
+	display: none !important;
+}
+
+
+ */
+ 
+ /*personalizacion de colores para los combos select*/
+ .ui-selectonemenu-panel .ui-state-highlight, .ui-selectcheckboxmenu-panel .ui-state-highlight {
+    color: #fff !important;
+    background-color: #3E98D3 !important;
+}
+
+/*cambio de fuente de dosis a verdana*/
+
+body {font-family: verdana !important;}
+.ui-widget{font-family: verdana !important;}
+.ui-widget .ui-widget{font-family: verdana !important;}
+.ui-datatable{font-family: verdana !important;}
+.ui-datatable .ui-paginator .ui-paginator-current{font-family: verdana !important;}
+.ui-datatable .ui-paginator .ui-paginator-rpp-options{font-family: verdana !important;}
+.ui-datatable table tbody td{font-family: verdana !important;}
+.ui-datatable-fs .ui-datatable-frozenlayout-right,
+.ui-datatable-fs .ui-datatable-frozenlayout-left{font-family: verdana !important;}
+.ui-datatable table thead tr th,
+.ui-datatable table tfoot tr td,
+.ui-datatable table thead tr th {font-family: verdana !important;}
+.ui-datatable table tbody tr td{font-family: verdana !important;}
+.ui-datatable-footer {font-family: verdana !important;}
+.ui-datagrid {font-family: verdana !important;}
+.ui-datagrid .ui-paginator .ui-paginator-rpp-options {font-family: verdana !important;}
+.ui-datalist {font-family: verdana !important;}
+.ui-datalist .ui-datalist-header {font-family: verdana !important;}
+.ui-datalist .ui-datalist-content .ui-datalist-data {font-family: verdana !important;}
+.ui-datalist .ui-paginator .ui-paginator-rpp-options {font-family: verdana !important;}
+.fc-header {font-family: verdana !important;}
+.fc-header-center {font-family: verdana !important;}
+.fc {font-family: verdana !important;}
+.fc-toolbar button  {font-family: verdana !important;}
+.fc-toolbar .ui-state-active,
+.fc-toolbar .ui-state-hover {font-family: verdana !important;}
+.fc-center {font-family: verdana !important;}
+.fc-view-container .fc-content-skeleton table thead tr .fc-sun,
+.fc-view-container .fc-content-skeleton table thead tr .fc-sat {font-family: verdana !important;}
+.fc-view-container table tbody tr .fc-day {font-family: verdana !important;}
+.ui-picklist {font-family: verdana !important;}
+.ui-orderlist {font-family: verdana !important;}
+.ui-orderlist .ui-orderlist-list .ui-state-highlight {font-family: verdana !important;}
+.ui-carousel {font-family: verdana !important;}
+.ui-carousel .ui-carousel-header {font-family: verdana !important;}
+.ui-tree {font-family: verdana !important;}
+.ui-treetable {font-family: verdana !important;}
+.ui-treetable .ui-treetable-header {font-family: verdana !important;}
+.ui-treetable table tbody .ui-state-highlight td {font-family: verdana !important;}
+.ui-accordion {font-family: verdana !important;}
+.ui-panelgrid {font-family: verdana !important;}
+.ui-fieldset {font-family: verdana !important;}
+.ui-fieldset-legend {font-family: verdana !important;}
+.ui-inputfield {font-family: verdana !important;}
+.ui-button-text {font-family: verdana !important;}
+.ui-menu .ui-menu-list .ui-widget-header {font-family: verdana !important;}
+.ui-menu .ui-menuitem .ui-menuitem-link {font-family: verdana !important;}
+.ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem a {font-family: verdana !important;}
+.ui-panel .ui-panel-titlebar {
+	font-family: verdana !important;
+	background-color: #999;
+	color: #fff;
+}
+.ui-datagrid .ui-panel .ui-panel-titlebar {font-family: verdana !important;}
+.ui-panel .ui-panel-content.ui-widget-content {font-family: verdana !important;}
+.ui-selectonemenu, .ui-selectcheckboxmenu {font-family: verdana !important;}
+.ui-selectcheckboxmenu {font-family: verdana !important;}
+#keypad-div .keypad-row button {font-family: verdana !important;}
+.ui-password-panel {font-family: verdana !important;}
+.ui-inputswitch {font-family: verdana !important;}
+.ui-selectonelistbox {font-family: verdana !important;}
+.ui-selectmanymenu {font-family: verdana !important;}
+.ui-datepicker {font-family: verdana !important;}
+.ui-editor {font-family: verdana !important;}
+.ui-outputlabel {font-family: verdana !important;}
+.ui-progressbar-label {font-family: verdana !important;}
+.ui-autocomplete-input-token input[type="text"] {font-family: verdana !important;}
+.ui-multiselectlistbox .ui-multiselectlistbox-listcontainer .ui-multiselectlistbox-header {font-family: verdana !important;}
+.ui-multiselectlistbox .ui-multiselectlistbox-listcontainer .ui-multiselectlistbox-list {font-family: verdana !important;}
+.ui-layout-container .ui-layout-unit {font-family: verdana !important;}
+.ui-layout-unit .ui-layout-unit-header {font-family: verdana !important;}
+.ui-layout-unit .ui-layout-unit-header .ui-layout-unit-header-title {font-family: verdana !important;}
+.ui-wizard .ui-wizard-step-titles li {font-family: verdana !important;}
+#layout-menu > li > a {font-family: verdana !important;}
+
+.ui-selection-column{width: 40px !important;}
+
+/*burbuja roja aviso numero de elementos*/
+
+.bubble {
+    background-color: #ef3f61;
+    color: #ffffff;
+    display: inline-block;
+    position: absolute;
+    padding: 0.1rem 0.6rem;
+    border-radius: 30px;
+    margin: -0.8rem 0px 0px 3px !important;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+    font-family: 'verdana' !important;
+    font-weight: normal !important;
+    font-size: 1.2rem !important;
+}
+
+.bubble.contadorSolicitudesPendientes{
+	float: right !important;
+    position: relative;
+    left: 10px;
+}
+
+.bubble.contadorNotificaciones{
+    position: relative;
+    top: 12px;
+    left: -20px;
+}
+
+
+/*modificaciones al menu de atlas*/
+/*ponerlo de horizontal a vertical y que empieze oculto y se muestre con un boton de menu*/
+
+#layout-menu{
+	display: block;
+	text-align: left;
+	margin-top: 20px !important;
+}
+
+#layout-menu > li{
+	display: block;
+	text-align: left;
+	margin-bottom: 20px !important;
+}
+
+#layout-menu > li > a{
+	color: #000 !important;
+	text-align: left;
+}
+
+#layout-menu > li > a i {
+    display: initial;
+    font-size: 2rem !important;
+}
+
+#menu-button {
+	margin-left: 8px !important;
+    float: right !important;
+    padding-left: 0.8rem !important;
+    padding-right: 0.8rem !important;
+}
+
+#menu-button:hover{
+	background-color: #999 !important;
+}
+
+#layout-menu-cover .ui-panelmenu{
+	color: #A8ACB1 !important;
+	background-color: transparent !important;
+	border: none !important;
+	height: 100% !important;
+}
+
+@media all and (max-height: 1100px){
+	#layout-menu-cover .ui-panelmenu{
+		margin-bottom: 2000px !important;
+	}
+}
+
+@media all and (min-height: 1100px){
+	#layout-menu-cover .ui-panelmenu{
+		margin-bottom: 1600px !important;
+	}
+}
+
+.ui-panelmenu .ui-panelmenu-panel {
+    /*overflow-y: scroll !important;*/
+    height: 100% !important;
+}
+
+.ui-panelmenu .ui-panelmenu-panel h3.ui-corner-top {
+    background-color: transparent;
+    display: none;
+}
+
+.ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem a{
+	color: #A8ACB1 !important;
+	background-color: transparent;
+}
+
+.ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem .ui-state-hover{
+	color: #FFF !important;
+	background-color: transparent;	
+	border-radius: 0px !important;
+}
+
+.ui-panelmenu a.ui-state-hover{
+	background-color: transparent !important;
+}
+
+/*bordes superior e inferior*/
+.ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content  {
+    background-color: transparent !important;
+    border-top: solid 1px #404A4E  !important;
+    border-bottom: solid 1px #404A4E !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.ui-menu-parent{
+	border-radius: 0px !important;
+	background-color: #20282B !important;
+	padding-top: 0px !important;
+	padding-bottom: 0px  !important;
+}
+
+.ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem:hover {
+    /*background-color: transparent !important;*/
+}
+
+.ui-panelmenu .ui-menuitem-link{
+	padding-top: 7px !important;
+	padding-bottom: 7px  !important;
+}
+
+.ui-panelmenu .ui-menuitem-link:hover{
+	/*text-decoration: underline !important;*/
+	background-color: #000 !important;
+}
+
+/*menu desplegado y menu oculto*/
+
+.anchoCuerpoMenuDesplegado{
+	/*float: right !important;*/
+	/*width: 70% !important;*/
+}
+
+.anchoCuerpoMenuOculto{
+	float: left !important;
+	width: 100% !important;
+}
+
+/*margenes del menu*/
+.ui-panelmenu .ui-menu-parent .ui-menu-list {
+    /*margin-left: 0px !important;*/
+}
+
+.ui-panelmenu .ui-menu-parent > .ui-menuitem-link > .ui-icon {
+    left: 0.5em !important;
+}
+
+.ui-panelmenu .ui-menu-parent .ui-menuitem-link-hasicon {
+    padding-left: 2em !important;
+}
+
+.ui-panelmenu .ui-panelmenu-content {
+    overflow-x: hidden !important;
+}
+
+.ui-panelmenu .ui-menu-list.ui-helper-hidden {
+    background-color: #20282B !important;
+}
+
+/*modulos*/
+
+.CardSmallTopic {
+    display: block;
+    font-family: verdana !important;
+    font-size: 1.3rem;
+    padding: 0px 0px !important;
+    color: #000 !important;
+}
+
+.Card{
+	padding-top: 10px !important;
+	border: solid 1px #d6d6d6 !important;
+}
+
+/*celdas de las tablas de la home*/
+.ui-panelgrid-content {
+    color: #000;
+}
+
+.ui-accordion-header{
+	background-color: transparent !important;
+}
+
+
+.ui-accordion {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.ui-accordion .ui-accordion-header .ui-icon {
+    top: 12px !important;
+    margin-top: 0px !important;
+}
+
+/*modulo a dos columnas con navegador de pestañas lateral*/
+.ui-tabs-left {
+    border: none !important;
+   background-color: transparent !important;
+}
+
+/*pestañas*/
+.ui-tabs-left .ui-tabs-nav {
+    background-color: #fff !important;
+    height: auto !important;
+    z-index: 100 !important;
+}
+
+.ui-tabs-left > .ui-tabs-panels {
+    /*border-left: solid 1px #d6d6d6 !important;*/
+   /* position: relative !important;
+    left: -23px;*/
+    background-color: #fff !important;
+    z-index: 1 !important;
+}
+
+.ui-tabs-left .ui-tabs-nav li.ui-tabs-selected,
+.ui-tabs-left .ui-tabs-nav li.ui-tabs-active,
+.ui-tabs-left .ui-tabs-nav li.ui-tabs-hover {
+    background-color: #999 !important;
+    border: solid 1px #999 !important;
+    border-radius: 0px !important;
+    color: #fff !important;
+}
+
+
+.ui-tabs-left .ui-tabs-nav li.ui-tabs-selected a,
+.ui-tabs-left .ui-tabs-nav li.ui-tabs-active a,
+.ui-tabs-left .ui-tabs-nav li.ui-state-hover a {
+     color: #fff !important;
+}
+
+/*tamaño de fuente*/
+
+.ui-panelgrid{font-size:12px !important;}
+.ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem a {
+    font-size: 12px;
+}
+
+/*cabecera de los modulos*/
+.Card.cabecera{
+	padding: 0px !important;
+}
+
+.CardSmallTopic.cabecera{
+	padding-top: 10px !important;
+    padding-left: 20px !important;
+    padding-bottom: 10px !important;
+    border-bottom: solid 1px #ccc !important;
+    background: #f0f2f4; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f6f7f9, #ebedf0); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f6f7f9, #ebedf0); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f6f7f9, #ebedf0); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f6f7f9, #ebedf0); /* Standard syntax */
+    min-height: 18px;
+}
+
+/*en dispositivos moviles oculto el fondo y el borde para qu eno se monte y no de problemas*/
+@media all and (max-width: 1200px){
+	.CardSmallTopic.cabecera{
+		background: none !important;
+		border-bottom: none !important;
+	}
+}
+
+.fondoCabecera{
+	background: #f0f2f4; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f6f7f9, rgba(0, 0, 0, 0.2)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f6f7f9, rgba(0, 0, 0, 0.2)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f6f7f9, rgba(0, 0, 0, 0.2)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f6f7f9, rgba(0, 0, 0, 0.2)); /* Standard syntax */
+}
+
+.fondoCabecera2{
+	background: #ff8000; 
+}
+
+.textoBotonRecordatorio{
+	position: relative !important;
+	bottom: 5px !important;
+}
+
+/*modulo solicitudes pendientes*/
+
+.ui-tabs.ui-tabs-left > .ui-tabs-nav li {
+    background-color: #ccc;
+    cursor: pointer;
+    border-radius: 0px !important;
+    width: 100%;
+}
+
+
+.ui-tabs.ui-tabs-left > .ui-tabs-nav li.ui-state-hover {
+	background-color: #999 !important;
+	border: solid 1px #999 !important;
+}
+
+.ui-tabs-left > .ui-tabs-nav{
+	padding-top: 0px !important;
+}
+
+
+.tablaSolicitudesPendientes{
+	position: relative !important;
+    left: -10px !important;
+}
+
+
+.tablaSolicitudesPendientes .ui-datatable-tablewrapper {
+    margin-top: 4px;
+    margin-left: 0px;
+    width: 105% !important;
+}
+
+
+.tablaSolicitudesPendientes.ui-datatable table thead tr th,
+.tablaSolicitudesPendientes.ui-datatable table tfoot tr td,
+.tablaSolicitudesPendientes.ui-datatable table thead tr th {
+    color: #000 !important;
+    background-color: transparent !important;
+    border: none !important;
+    outline: none !important;
+    padding: 0px !important;
+}
+
+.tablaSolicitudesPendientes.ui-datatable {
+    border: none !important;
+    background-color: transparent !important;
+    color: #000 !important;
+}
+
+.tablaSolicitudesPendientes.ui-datatable table tbody td {
+    padding: 10px 10px !important;
+}
+
+.tablaSolicitudesPendientes.ui-datatable table tbody tr td {
+    color: #003d50 !important;
+    border: none !important;
+}
+
+.tablaSolicitudesPendientes.ui-datatable .ui-datatable-even{
+    background-color: #FFF !important;
+}
+
+.tablaSolicitudesPendientes.ui-datatable .ui-datatable-odd {
+	/*background-color: #f0f2f4 !important;*/
+	background-color: #FFF !important;
+}
+
+.tablaSolicitudesPendientes .celdaFecha{
+	position: relative !important;
+	left: -10px !important;
+}
+
+.tablaSolicitudesPendientes .celdaId{
+	position: relative !important;
+	left: -5px !important;
+}
+
+/*formulario de la home controlar que sea al 100% cuando esta vacio*/
+#homeForm{
+	width: 100%;
+}
+
+/*tabla home*/
+
+.tablaHome{
+
+}
+
+
+.tablaHome .ui-datatable-tablewrapper {
+    margin-top: 4px;
+    /*margin-left: 0px; para fondo blanco*/
+    margin-left: -4px; /*para fondo rayado*/
+    width: 100% !important;
+}
+
+
+.tablaHome.ui-datatable table thead tr th,
+.tablaHome.ui-datatable table tfoot tr td,
+.tablaHome.ui-datatable table thead tr th {
+    color: #000 !important;
+    background-color: transparent !important;
+    border: none !important;
+    outline: none !important;
+    padding: 0px !important;
+}
+
+.tablaHome.ui-datatable {
+    border: none !important;
+    background-color: transparent !important;
+    color: #000 !important;
+}
+
+.tablaHome.ui-datatable table tbody td {
+    padding: 10px 10px !important;
+}
+
+.tablaHome.ui-datatable table tbody tr td {
+    color: #003d50 !important;
+    border: none !important;
+}
+
+
+.tablaHome.ui-datatable table tbody tr td a,
+.ui-dialog .ui-datatable table tbody tr td a{
+	/*right: 10px;*/	
+	 font-size: 12px !important;
+	 text-decoration: none !important;
+	 color: #666 !important;
+}
+
+.tablaHome.ui-datatable table tbody tr td a:hover,
+.ui-dialog .ui-datatable table tbody tr td a:hover{
+    color: #000 !important;
+    border: none !important;
+    font-size: 12px !important;
+    text-decoration: none !important;
+    /*text-decoration: underline !important;*/
+}
+
+.tablaSolicitudesPendientes.ui-datatable table tbody tr td a{
+	/*right: 10px;*/	
+	 font-size: 12px !important;
+	 text-decoration: none !important;
+	 color: #000 !important;
+}
+
+.tablaSolicitudesPendientes.ui-datatable table tbody tr td a:hover{
+    color: #000 !important;
+    /* background-color: #003d50 !important; */
+    border-radius: 3px !important;
+    padding: 5px;
+    position: relative;
+    right: 5px;
+    font-weight: bolder !important;
+    border: none !important;
+    font-size: 12px !important;
+    text-decoration: none !important;
+}
+
+.tablaHome.ui-datatable .ui-datatable-even{
+    background-color: #FFF !important;
+}
+
+.tablaHome.ui-datatable .ui-datatable-odd {
+	background-color: #f0f2f4 !important;
+	/*background-color: #FFF !important;*/
+}
+
+.tablaHome .celdaFecha{
+	position: relative !important;
+	left: -10px !important;
+}
+
+.tablaHome .celdaId{
+	position: relative !important;
+	left: -5px !important;
+}
+
+.tablaHome .ui-panelgrid{
+	background-color: #cdd9e0 !important;
+	border: none !important;
+	border-radius: 2px;
+}
+
+.panelGridDetalleHome{
+	background-color: #cdd9e0 !important;
+	border: none !important;
+}
+
+/*boton descarga de los modulos*/
+.ui-commandlink {
+    color: #999 !important;
+}
+
+.contenedorBotonesModulo{
+	position: relative;
+	bottom: 2px;
+	margin-right: 10px;
+}
+
+.contenedorBotonesModulo a.ui-commandlink:hover i{
+	color: #000 !important;
+}
+
+/*aplicar esta misma regla a todos los enlaces, especialmente*/
+/*ojo esto se carga los botones del menu derecho*/
+/*a.ui-commandlink:hover i{
+	color: #000 !important;
+}
+
+a.ui-commandlink:hover{
+	color: #000 !important;
+}*/
+
+/*aplicar este estilo de enlaces dentro de los dialogos y las tablas, respetando el menu derecho*/
+.ui-dialog  a.ui-commandlink:hover i,
+.ui-datatable  a.ui-commandlink:hover i
+{color: #000 !important;}
+
+.ui-dialog  a.ui-commandlink:hover,
+.ui-datatable  a.ui-commandlink:hover
+{color: #000 !important;} 
+
+/*----------------*/
+
+/*menu en la cabecera de los modulos*/
+
+.enlaceMenuModulo{
+	margin-left: 10px !important;   
+    /* background-color: #999 !important; */
+    /*height: 100% !important;*/
+    /*border-right: solid 1px #000 !important;
+    padding-right: 18px !important;*/
+	
+}
+
+.enlaceMenuModulo i{
+	position: relative;
+	top: -5px;
+    padding: 5px !important;
+	color: #909090 !important;
+}
+
+.enlaceMenuModulo:hover i{
+	background-color: transparent !important;
+	color: #000 !important;
+}
+
+/*paneles detalle de los modulos de la home*/
+.chrome .tablaHome .ui-grid-row .ui-panelgrid-cell .Fs12.FontBold{
+	position: relative;
+	top: 5px;
+}
+
+
+/*FORMULARIOS*/
+/*elementos de formulario*/
+#layout-portlets-cover{
+	color: #000 !important; 
+	font-size: 12px !important;
+	margin-top: 20px !important;
+}
+
+.ui-inputfield {
+    background-color: #ffffff !important;
+    font-size: 12px !important;
+}
+
+.ui-outputlabel {
+    font-size: 12px !important;
+    margin-top: 5px !important;
+    vertical-align: -webkit-baseline-middle !important;
+}
+
+/*combobox*/
+.ui-fluid .ui-selectonemenu .ui-selectonemenu-trigger {
+    width: 35px !important;
+    height: 29px !important;
+}
+
+.ui-selectonemenu .ui-selectonemenu-trigger, 
+.ui-selectcheckboxmenu .ui-selectcheckboxmenu-trigger {
+    background-color: #999;
+}
+
+.ui-selectonemenu-panel {
+    border: solid 1px #999 !important;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5) !important;
+    -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5) !important;
+    -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5) !important;
+}
+
+/*selects que necesitan flotar por encima de los dialogos*/
+.ui-dialog .ui-selectonemenu-panel {
+    left: auto !important;
+    top: auto !important;
+    /*position: fixed !important;*/
+}
+.ui-selectonemenu-panel .ui-selectonemenu-list-item, .ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-list-item {
+    border-bottom: solid 1px #FFF !important;
+    font-size: 12px !important;
+    color: #fff !important;
+    background-color: #8c8c8c !important;
+}
+
+.ui-selectonemenu-panel .ui-selectonemenu-list-item.ui-state-hover, 
+.ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-list-item.ui-state-hover {
+	font-weight: bolder !important;
+	color: #000 !important;
+    background-color: #fff !important;	
+}
+
+/*radiobuttons*/
+.ui-selectoneradio label {
+    color: #000 !important;
+    font-size: 12px !important;
+}
+
+.ui-radiobutton .ui-state-active .ui-icon-bullet, .ui-radiobutton .ui-state-focus .ui-icon-bullet {
+	background-color: #666 !important;
+}
+
+.ui-radiobutton .ui-radiobutton-box {
+    border: solid 1px #000 !important;
+}
+
+.ui-radiobutton .ui-state-active .ui-icon-bullet, .ui-radiobutton .ui-state-focus .ui-icon-bullet {
+    background-image: none !important;
+}
+
+/*checkbuttons*/
+/*bajar los checkbuttons en los formularios para alinearlos con el texto*/
+.chrome .ui-fluid .ui-chkbox .ui-chkbox-box {
+    position: relative !important;
+    top: 4px !important;;
+}
+
+/*mantener los checkbox a ras cuando estan dentro de las tablas*/
+.chrome .ui-fluid .ui-datatable .ui-chkbox .ui-chkbox-box{
+	position: relative !important;
+    top: 0px !important;
+}
+
+/*checkbox dentro de un select list box*/
+.chrome .ui-selectmanymenu .ui-selectlistbox-item .ui-chkbox {
+     margin-top: -10px !important;
+}
+
+/*boton de mas menos ui-spinner-buton*/
+.ui-spinner-button .ui-button-text{
+	background-color: #999999;
+}
+
+/*tablas de datos*/
+.ui-datatable {
+    border: none !important;
+    background-color: transparent;
+    color: #000 !important;
+    font-family: verdana !important;
+}
+
+.ui-datatable .ui-datagrid-header, .ui-datatable .ui-datatable-header, .ui-datatable .ui-datatable-subtable-header, .ui-datatable .ui-datatable-summaryrow {
+    color: #000 !important;
+    background-color: transparent !important;
+    font-size: 14px !important;
+    border-bottom: none !important;
+}
+
+.ui-datatable table thead tr th, .ui-datatable table tfoot tr td, .ui-datatable table thead tr th {
+    color: #000 !important;
+    background-color: #d4d6d8 !important;
+    border: solid 1px #ccc !important;
+}
+
+.tablaPropuestasInversion table thead tr th, .tablaPropuestasInversion table tfoot tr td, .tablaPropuestasInversion table thead tr th {
+    color: #000 !important;
+    background-color: #d4d6d8 !important;
+    border: solid 2px #fff !important;
+	font-size: 10px !important;
+}
+
+.tablaHtml table thead tr th, .tablaHtml table tfoot tr td, .tablaHtml table thead tr th {
+    color: #000 !important;
+    background-color: #f5d19d !important;
+    border: solid 2px #000 !important;
+	}
+
+.tablaPropuestasInversion.ui-datatable table tbody tr td a,
+.ui-dialog .ui-datatable table tbody tr td a{
+	 font-size: 10px !important;
+	 text-decoration: none !important;
+	 color: #000 !important;
+}
+
+.tablaPropuestasInversion.ui-datatable table tbody tr td a:hover,
+.ui-dialog .ui-datatable table tbody tr td a:hover{
+    color: #666 !important;
+    border: none !important;
+    font-size: 10px !important;
+    text-decoration: none !important;
+}
+
+
+.ui-datatable table thead tr th.ui-state-active,
+.ui-datatable .ui-datatable-sticky table thead tr th.ui-state-active {
+    background-color: #999 !important;
+    color: #fff !important;
+}
+
+.ui-datatable table thead tr th.ui-state-hover, .ui-datatable .ui-datatable-sticky table thead tr th.ui-state-hover {
+    background-color: #999 !important;
+    color: #fff !important;
+}
+
+
+.ui-datatable .ui-paginator .ui-paginator-current {
+    font-size: 12px !important;
+}
+
+.ui-datatable .ui-paginator-top,
+ .ui-datatable .ui-paginator-bottom{
+    background-color: transparent !important;
+}
+
+.ui-datatable .ui-paginator .ui-paginator-first,
+.ui-datatable .ui-paginator .ui-paginator-prev,
+.ui-datatable .ui-paginator .ui-paginator-pages .ui-paginator-page,
+.ui-datatable .ui-paginator .ui-paginator-next,
+.ui-datatable .ui-paginator .ui-paginator-last{
+    font-size: 14px !important;
+    border: none !important;
+    color: #000 !important;
+}
+
+.ui-datatable .ui-paginator .ui-paginator-rpp-options {
+    font-size: 14px !important;
+    border: solid 1px #ccc !important;
+    border-radius: 4px !important;
+    color: #000 !important;
+}
+
+/*paginador de las tablas*/
+.ui-datatable .ui-paginator .ui-state-active,
+.ui-datatable .ui-paginator .ui-paginator-pages .ui-state-active {
+   color: #778d9b !important;
+   border-bottom: solid 2px #778d9b !important; 
+}
+
+.ui-fieldset-legend {
+    color: #ffffff !important;
+    font-size: 14px !important;
+    font-family: verdana !important;
+    background-color: #999 !important;
+}
+
+.ui-datatable .ui-datatable-header .ui-outputpanel input.ui-inputfield{
+	/*width: 80% !important;*/
+}
+
+.ui-datatable-footer{
+	background-color: transparent !important;
+}
+
+.CardBigTopic {
+    font-family: verdana !important;
+    color: #000 !important;
+    font-size: 14px !important;
+    font-weight: bolder !important;
+}
+
+.rojoTenue {
+    background-color: #F78181 !important;
+}
+
+.GrayButton .ui-button-text{
+	background: #f0f2f4 !important; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f6f7f9, rgba(0, 0, 0, 0.2)) !important; /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f6f7f9, rgba(0, 0, 0, 0.2)) !important; /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f6f7f9, rgba(0, 0, 0, 0.2)) !important; /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f6f7f9, rgba(0, 0, 0, 0.2)) !important; /* Standard syntax */
+    color: #000 !important;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1) !important;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1) !important;
+    -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1) !important;
+}
+
+@media all and (max-width: 800px){
+	.GrayButtonMobile{
+		max-width: 100%;
+	}
+}
+
+.miniButton{
+	min-width: 28px !important;
+    max-width: 28px !important;	
+    min-height: 28px !important;
+    max-height: 28px !important;
+}
+
+.miniButton .ui-button-text {
+    padding: 4.5px 2px !important;
+}
+
+#dlg_Servicios{
+	overflow-y: scroll !important;
+	height: 85% !important;
+}
+
+/*quitar la transparencia del growl*/
+.ui-growl-item-container{
+	opacity: 1 !important;
+	filter: alpha(opacity=100) !important;
+	background-color: white !important;
+	border: solid 1px white !important;
+}
+
+/*tags componentes grupos de elementos en los formularios*/
+
+/*menu buscador superior derecho*/
+/*version antigua capa flotante
+#menuBuscador{
+	display: none;
+    position: fixed;
+    top: 5rem;
+    right: 1rem;
+    background-color: #fff !important;
+    float: right !important;
+    z-index: 999 !important;
+    max-width: 350px !important;
+    min-width:300px !important;
+}*/
+
+#menuBuscador{
+    position: fixed;
+    top: 8rem;
+    right: auto;
+    background-color: transparent !important;
+    float: right !important;
+    z-index: 999 !important;
+    max-width: 345px !important;
+    padding: 0 !important;
+    overflow: hidden;
+    height: 100%;
+}
+
+#menuNotificaciones{
+    position: fixed;
+    top: 8rem;
+    right: auto;
+    background-color: transparent !important;
+    float: right !important;
+    z-index: 999 !important;
+    max-width: 345px !important;
+    padding: 0 !important;
+    overflow: hidden;
+    height: 100%;
+}
+
+#listadoResultadosBuscador .ui-accordion-header{
+	background-color: #CCC !important;
+}
+
+#listadoResultadosBuscador > h3.ui-state-hover{
+	background-color: #d6d6d6 !important;
+	color: #000 !important;
+	font-weight: bolder !important;
+}
+
+#listadoResultadosBuscador > h3.ui-state-active {
+    background-color: #657e85 !important;
+    color: #FFF !important;
+	font-weight: bolder !important;
+}
+
+#listadoResultadosBuscador h3{font-size: 10px !important;}
+
+#listadoResultadosBuscador > h3 > span,
+#listadoResultadosBuscador .ui-accordion-header .ui-icon {
+    top: 6px !important;
+    margin-top: 0px !important;
+}
+
+#listadoResultadosBuscador .ui-tabs-outline{
+	color: #fff !important;
+}
+
+#listadoResultadosBuscador .ui-datagrid{
+	border: none !important;
+	background-color: transparent !important;
+}
+
+#botonMenuBuscadorCerrar{
+	position: relative !important;
+	bottom: 10px !important;
+}
+
+#menuBuscador .ui-menu {
+    border: none !important;
+    color: #fff;
+    background-color: transparent !important;
+    padding-left: 10px;
+    border-bottom: solid 2px #404a4e !important;
+    border-top: solid 1px #404a4e !important;
+    /* padding-bottom: 20px !important; */
+    /* padding-top: 20px !important; */
+    border-radius: 0px !important;
+    margin-top: -5px !important;
+    margin-bottom: -5px !important;
+}
+
+#menuBuscador .ui-accordion {
+    border: none !important;
+    color: #fff;
+    background-color: transparent !important;
+    padding-left: 10px;
+    border-bottom: solid 2px #404a4e !important;
+    border-top: solid 1px #404a4e !important;
+    /* padding-bottom: 20px !important; */
+    /* padding-top: 20px !important; */
+    border-radius: 0px !important;
+    margin-top: -5px !important;
+    margin-bottom: -5px !important;
+}
+
+#menuBuscador .ui-menu .ui-menuitem,
+#menuBuscador .ui-accordion .ui-accordion-content{
+    margin:0px !important;
+    padding: 0px !important;
+    line-height: 1.0 !important;
+    overflow-y: hidden !important;
+}
+
+
+#menuBuscador .ui-menu  .ui-menuitem a{
+	font-size: 12px;
+	color: #A8ACB1 !important;
+    background-color: transparent;
+    /*padding-top: 8px !important;*/
+    border-radius: 0px !important;
+    padding-right: 0px !important;
+}
+
+#menuBuscador .ui-menu  .ui-menuitem  a:hover{
+	color: #FFF !important;
+	background-color: #000 !important;
+}
+
+#menuBuscador .ui-menu  .ui-menuitem  a:hover  i{
+	color: #FFF !important;
+}
+
+#menuBuscador .ui-grid-col-11 {
+    margin-left: -10px !important;
+}
+
+.enlaceGrisBlanco{
+	color: #A8ACB1 !important;
+	text-decoration: none !important;
+}
+
+.enlaceGrisBlanco:hover{
+	color: #FFF !important;
+	text-decoration: none !important;
+}
+
+#menuBuscador .ui-menu  .ui-menuitem  a:hover .ui-menuitem-icon{
+	color: #FFF !important;
+	background-color: #000 !important;
+}
+
+#menuBuscador .ui-menu  .ui-menuitem a .ui-menuitem-icon{
+	color: #A8ACB1 !important;
+	margin-right: 0px  !important;
+}
+
+#menuBuscador .ui-menu  .ui-menuitem a .ui-menuitem-icon:hover{
+	color: #FFF !important;
+	background-color: #000 !important;
+}
+
+/*cabeceras de seccion de los resultados del menu buscador derecho*/
+#menuBuscador .ui-menu .ui-menu-list .ui-widget-header {
+    font-size: 12px;
+    color: #A8ACB1;
+    background-color: transparent;
+    margin-left: -15px !important;
+    width: 120% !important;
+    margin-top: -4px;
+    /*margin-bottom: -4px !important;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#menuBuscador .ui-accordion .ui-accordion-header {
+    font-size: 12px !important;
+    color: #A8ACB1;
+    background-color: transparent;
+    margin-left: -10px !important;
+    width: 120% !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+    padding-left: 30px !important;
+}
+
+#menuBuscador .ui-accordion .ui-accordion-header .ui-icon {
+    top: 5px !important;
+    margin-top: 0px !important;
+    left: 10px !important;
+}
+
+#menuBuscador .ui-menu .ui-menu-list .ui-widget-header:hover ,
+#menuBuscador .ui-accordion .ui-accordion-header:hover{
+	background-color: #000 !important;
+	color: #fff;
+}
+
+#menuBuscador .ui-accordion .ui-accordion-header:first-child{
+	border-bottom: none !important;
+	border-top: none !important;
+}
+
+#menuBuscador .ui-accordion .ui-accordion-header{
+	border-top: solid 1px #20353C !important;
+}
+
+#menuBuscador .ui-accordion .ui-accordion-header:last-child{
+	border-top: solid 1px #20353C !important;
+	border-bottom: none !important;
+}
+
+.menuBuscadorCabeceraMenu:first-child{
+	margin-bottom: 5px !important;
+}
+
+.menuBuscadorCabeceraMenu{
+	border-top: solid 1px #404a4e !important;
+}
+
+.menuBuscadorCabeceraMenu:last-child{
+	border-top: solid 1px #2D353C !important;
+}
+
+/*una sola opcion dentro de cada elemento del accordion*/
+.menuBuscadorElementoMenu{
+	margin-right: 0px !important;
+	margin-left: 20px !important;
+	margin-top: -5px !important;
+	padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.menuBuscadorElementoMenu:hover{
+	background-color: #000 !important;
+	border-radius: 1px !important;
+	cursor: pointer;
+}
+
+.menuBuscadorElementoMenu:hover  i{
+	color: #FFF !important;
+	cursor: pointer;
+}
+
+.menuBuscadorElementoMenu:hover  span{
+	color: #FFF !important;
+	cursor: pointer;
+}
+
+#contenedorResultadosBuscador{
+	background-color: #20282b !important;
+	left: 0px !important;
+}
+
+/*cajas de texto del buscador menu superior derecho*/
+.cajaTextoBuscador,
+#textoBuscador_input{
+	width: 80%  !important;
+	margin-left: 10px !important;
+}
+
+/*igualar la fuente de los dos menus*/
+.ui-menu.ui-menu-toggleable li.ui-widget-header h3 {
+    font-weight: normal !important;
+}
+
+/*selectores de fecha*/
+/*ajustar el tamaño para que sea igual que el de los selects*/
+/*ajustar el color del selector de fecha*/
+.ui-datepicker-trigger.ui-button-icon-only .ui-button-text {
+    padding: 6px 0px !important;   
+    background-color: #999999;
+}
+
+.ui-datepicker-trigger.ui-button-icon-only .ui-button-text:hover {
+	background-color: #3e5e66;
+}
+
+.ui-fluid .ui-datepicker-trigger {
+    min-width: 35px !important;
+    max-width: 35px !important;
+    float: right !important;
+}
+ 
+ .menuPrincipal .ui-panelmenu-header{
+ 	display:none !important;
+ }
+ 
+/*toolbar menu superior dentro de los menus laterales*/
+.toolBarMenuDerecho{
+	padding-top: 5px !important;
+	padding-bottom: 30px !important;
+	border-bottom: solid 1px #404A4E  !important
+}
+.toolBarMenuPrincipal{
+	padding-top:  5px !important;
+	padding-bottom: 45px !important;
+}
+
+.toolBarMenuPrincipal i,
+.toolBarMenuDerecho i {
+	border: solid 1px #666666 !important;
+	/*border-radius:  50px !important;*/
+	padding: 5px !important;
+	color: #999 !important;
+}
+
+.toolBarMenuPrincipal i:hover,
+.toolBarMenuDerecho  i:hover{
+	background-color: #000 !important;
+	border: solid 1px #000 !important;
+	color: #fff !important;
+}
+
+#botonCerrarMenuBuscador{
+	
+}
+
+/*esta clase se añade por jquery solo cuando es necesaria*/
+@media all and (min-width:961px){
+	.colocaBotonCerrarMenuBuscador{
+		position: relative;
+	    bottom: 29px;
+	}
+}
+
+@media all and (max-width:960px){
+	.colocaBotonCerrarMenuBuscador{
+		position: relative;
+	    bottom: 17px;
+	}
+}
+
+/*dialogos emergentes*/
+.ui-dialog .ui-dialog-titlebar {
+	background-color: #404A4E !important;
+	border: solid 1px #fff !important;
+}
+
+.ui-dialog{
+	 box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05) !important;
+    -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05) !important;
+    -moz-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05) !important;
+    max-height:  85% !important;
+ }
+
+/*clase especifica para los dialogos interiores*/
+/*controla  que se muestre solo el scroll cuando es necesario y maximo de alto para que sea visible bien*/
+/*ojo no controlar el alto con % mediante styleclass y ni poner el alto en el componente p:dialog*/
+.dialogoTablaInterior{
+	overflow-y: scroll !important;
+}
+
+.dialogoTablaInterior .ui-dialog-content{
+	/*overflow-y: auto !important; valor original*/
+	/*overflow-y: hidden !important;
+	max-height: 580px !important;*/
+}
+
+#dlg_Confirmar{
+	position: fixed !important;
+	top: 20% !important;
+}
+
+#dlg_Confirmar .ui-dialog-content{
+	min-height: 450px !important;
+}
+
+#tablaPosiciones .ui-overlaypanel .ui-overlaypanel-content{
+	background-color: #999 !important;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5) !important;
+    -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5) !important;
+    -moz-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5) !important;
+}
+
+/*dialogos interiores creados desde los beans*/
+.ui-dialog .ui-dialog-content.ui-df-content {
+	padding: 0 !important;
+}
+
+@media all and (max-height: 600px){
+	.ui-dialog iframe{
+		height: 500px !important;
+	}
+}
+
+@media all and (min-height: 601px) and (max-height: 768px){
+	.ui-dialog iframe{
+		height: 550px !important;
+	}
+}
+
+@media all and (min-height: 769px) and (max-height: 800px){	
+	.ui-dialog iframe{
+		height: 700px !important;
+	}
+}
+
+@media all and (min-height: 801px) and (max-height: 1000px){
+	.ui-dialog iframe{
+		height: 700px !important;
+	}
+}
+
+@media all and (min-height: 1001px){
+	.ui-dialog iframe{
+		height: 720px !important;
+	}
+}
+/*.ui-hidden-container{
+	overflow-y: scroll !important;
+}*/
+
+/*RETOQUES PARA RESPONSIVE Y DISPOSITIVOS MOVILES*/
+
+/*recoloco el menu izquierdo en resoluciones inferiores a 1024*/
+@media all and (max-width: 960px) {
+	#layout-menu-cover {
+	    top: 7rem !important;
+	    left: 0px !important;
+	}
+}
+
+/*combos flotantes sobre la cabecera*/
+/*combos deshabilitados dentro de los dialogos*/
+
+.ui-selectonemenu, .ui-selectonemenu-panel{
+	z-index: 999 !important;
+}
+
+/*solucion bug por el cual se montan los combos dentro de los dialogs*/
+.ui-dialog .ui-selectonemenu{
+	z-index: auto  !important;
+}
+
+/*los select deshabilitados dentro de un dialogo*/
+.ui-dialog .ui-selectonemenu.Opac50{
+	/*z-index: 10000 !important;*/
+	opacity:1 !important;
+    -webkit-opacity:1 !important; 
+    -moz-opacity:1 !important;
+}
+
+.ui-dialog .ui-selectonemenu.Opac50 .ui-selectonemenu-label{
+	color: lightgray !important;
+}
+
+.ui-dialog .ui-selectonemenu.Opac50 .ui-selectonemenu-trigger{
+	background-color: lightgray !important;
+}
+
+.ui-dialog .ui-selectonemenu.Opac50  .ui-selectonemenu-panel .ui-selectonemenu-list-item,
+.ui-dialog .ui-selectonemenu.Opac50 .ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-list-item {
+    border: solid 1px #999 !important;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5) !important;
+    -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5) !important;
+    -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5) !important;
+    border-bottom: solid 1px #FFF !important;
+    font-size: 12px !important;
+    color: #fff !important;
+    background-color: #d3d5d7 !important;
+    opacity:1 !important;
+    -webkit-opacity:1 !important; 
+    -moz-opacity:1 !important;
+}
+
+.ui-dialog .ui-selectonemenu.Opac50  .ui-selectonemenu-panel .ui-selectonemenu-list-item.ui-state-highlight,
+.ui-dialog .ui-selectonemenu.Opac50 .ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-list-item.ui-state-highlight {
+	background-color: #999 !important;
+}
+.ui-dialog .ui-selectonemenu-panel{
+	z-index: 9999 !important;
+}
+
+.ie .ui-dialog .ui-selectonemenu-panel{
+	position: relative !important; /*solucion para los select que no salen bien dentro de los dialogos en explorer*/
+}
+
+#ui-datepicker-div.ui-datepicker{
+	z-index: 9999 !important; /*con dialog*/
+	/*z-index: 999 !important; /*sin dialog*/
+}
+
+/*BREADCRUMB*/
+.ui-breadcrumb ul li {
+	margin-right: 5px !important; /*quito espacio para que no se monte en resoluciones pequeñas*/
+}
+
+
+#breadCrumbCabeceraSolicitud{
+	margin-top: -4px !important;
+}
+
+
+#breadCrumbCabeceraSolicitud.ui-breadcrumb ul li .ui-menuitem-link.textoBreadCrumb {
+	margin-top: 5px  !important;
+}
+
+#breadCrumbCabeceraSolicitud.ui-breadcrumb ul li .ui-menuitem-link.textoBreadCrumb.ui-state-disabled {
+	text-decoration: none !important;	
+	color: #000 !important;
+}
+
+/*iconos superior derechos de la solicitud, ajuste para resoluciones moviles*/
+@media all and (max-width: 800px){
+	.contenedorIconosSuperiorDerechoCabeceraSolicitud{
+		/*position: relative;
+		bottom: 40px;*/
+	}
+}
+
+#textoDerechoSolicitudPadre{
+	float: right !important;
+}
+
+/*texto derecho de la cabecera de la solicitud, dato solicitud padre*/
+@media all and (max-width: 1360px){
+	#textoDerechoSolicitudPadre{
+		position: relative !important;
+		right: 10px !important;
+	}
+}
+
+@media all and (min-width: 1361px){
+	#textoDerechoSolicitudPadre{
+		position: absolute !important;
+		right: 30px !important;
+	}
+}
+
+/*colores para filas de las tablas segun su estado*/
+.pos-no-valida{
+	background-color: #ffcccc !important;
+}
+.pos-borrada{
+	background-color: #ffcccc !important;
+}
+.pos-no-modificable{
+	background-color: #ffffe6 !important;
+} 
+.pos-relacionada{
+	background-color: #eeeeee !important;
+} 
+
+
+/*estilos para imprimir desde plantilla */
+.tablaImpresion {
+	border-width: 0.5px !important;
+	border-style: solid !important;
+	border-collapse: collapse;
+	width: 99%;
+	font-family: Lucida Sans UniCode;
+	font-size: 12px;
+	
+	
+}
+.celdaTituloImpresion {
+	border-width: 0.5px !important;
+	border-style: solid !important;
+	background-color: #CCCCCC !important;
+	padding: 8px;
+	font-size: 14px;
+	font-weight: bolder !important;
+}
+.celdaLabelImpresion {
+	border-width: 0.5px !important;
+	border-style: solid !important;
+	border-color: #CCCCCC;
+	padding: 6px;
+	font-size: 14px;
+	font-weight: bolder !important;
+}
+.celdaDatoImpresion {
+	border-width: 0.5px !important;
+	border-style: solid !important;
+	border-color: #CCCCCC;
+	padding: 6px;
+	font-size: 12px;
+}
+
+/*subir la opacidad de los cambios deshabilitados*/
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+    opacity: .50 !important;
+    filter: alpha(opacity=50) !important;
+}
+
+
+.contenedorBotonera{
+	border: solid 1px #ccc; 
+	border-radius: 3px !important; 
+	padding-bottom: 20px; 
+	padding-top: 20px;
+}
+
+.botonMenuInterior{
+	margin-left: 10px !important;
+	margin-right: 10px !important; 
+}
+
+@media all and (min-width: 1280px){
+	.botonMenuInterior{
+		width: 12% !important;
+	}
+}
+
+@media all and (max-width: 1279px){
+	.botonMenuInterior{
+		width: 95% !important;
+		margin-bottom: 10px !important;
+		margin-top: 10px !important;
+	}
+}
+
+.pe-inputNumber {
+	text-align: right !important;
+}
+
+.gridPropuestas.ui-datagrid .ui-datagrid-header {
+	text-align: left !important;
+}
+
+
+.ui-datagrid .ui-panel .ui-panel-titlebar {
+	background-color: #666 !important;
+}
+
+th[role=columnheader] {
+	text-align: center !important;
+	vertical-align: middle !important;
+}

@@ -1,0 +1,241 @@
+@font-face { 
+  font-family: 'Gotham Book'; 
+  src:  url('../fonts/gotham-book.woff');
+  font-weight: 400;
+}
+@font-face { 
+  font-family: 'Gotham Book Italic'; 
+  src:  url('../fonts/gotham-book-italic.woff');
+  font-weight: 400;
+}
+@font-face { 
+  font-family: 'Gotham Medium'; 
+  src:  url('../fonts/gotham-medium.woff');
+  font-weight: 500;
+}
+@font-face { 
+  font-family: 'Gotham Medium Italic'; 
+  src:  url('../fonts/gotham-medium-italic.woff');
+  font-weight: 500;
+}
+@font-face { 
+  font-family: 'Gotham Bold'; 
+  src:  url('../fonts/gotham-bold.woff');
+  font-weight: 700;
+}
+@font-face { 
+  font-family: 'Gotham Bold Italic'; 
+  src:  url('../fonts/gotham-bold-italic.woff');
+  font-weight: 700;
+}
+
+/** Commons */
+body{
+  background-color: #FFF;
+}
+.ShadowEffect{
+  box-shadow: none;
+}
+.outer-container{
+  max-width: 1220px;
+  margin: 0 auto;
+}
+.Separator {
+  border-bottom: none;
+}
+
+/** widget */
+.ui-widget{
+  font-family: 'Gotham Book', Helvetica, Arial, sans-serif;
+}
+.ui-widget .ui-widget{
+  font-family: 'Gotham Medium', Helvetica, Arial, sans-serif;
+}
+
+/** Listado */
+.ui-tree{
+  border: none;
+  padding: 0;
+  color: #000;
+  font-family: 'Gotham Book', Helvetica, Arial, sans-serif;
+}
+.ui-tree .ui-treenode .ui-treenode-label{
+  font-size: 15px;
+  text-transform: lowercase;
+}
+.ui-tree .ui-treenode .ui-treenode-label.ui-state-hover, .ui-tree .ui-treenode .ui-state-highlight{
+  color: #f95752
+}
+.ui-tree .ui-treenode .ui-treenode-label:first-letter{
+  text-transform: uppercase;
+}
+.ui-tree .ui-icon-triangle-1-e {
+  background-image: url('../img/Arrow.svg');
+  background-size: 40%;
+}
+
+.ui-tree .ui-icon-triangle-1-s {
+  background-image: url('../img/Arrow.svg');
+  background-size: 40%;
+  transform: rotate(90deg);
+}
+
+/** Cards */
+.Card {
+  font-family: 'Gotham Book', Helvetica, Arial, sans-serif;
+  color: #000;
+}
+.CardTopic {
+  font-size: 18px;
+  font-family: 'Gotham Medium', Helvetica, Arial, sans-serif;
+  margin: 0px;
+  padding: 10px 0px;
+  width: 100%;
+  display: block;
+  color: #000;
+}
+.CardTopic i{
+  display: none;
+}
+
+/** Formularios */
+/* Label */
+label{
+  font-size: 14px;
+  font-family: 'Gotham Medium', Helvetica, Arial, sans-serif;
+}
+/* Input */
+.ui-inputfield, .ui-inputfield.ui-state-hover, .ui-inputfield.ui-state-focus {
+  color: #000 !important;
+  font-size: 14px;
+  font-family: 'Gotham Book', Helvetica, Arial, sans-serif !important;
+  padding: 12px 10px 11px 10px !important;
+  border: 1px solid #d0d0d0;
+  background-color: #FFF;
+}
+.ui-outputlabel{
+  color: #000;
+  font-size: 14px;
+}
+/* Select */
+.ui-selectonemenu, .ui-selectonemenu.ui-state-focus{
+  border-bottom: none !important;
+}
+.ui-selectonemenu .ui-selectonemenu-label, .ui-selectonemenu .ui-selectonemenu-label.ui-state-focus, .ui-selectonemenu.ui-state-focus .ui-selectonemenu-label{
+  background-color: #FFF !important;
+  border: 1px solid #d0d0d0 !important;
+}
+.ui-selectonemenu .ui-selectonemenu-trigger, .ui-selectonemenu .ui-selectonemenu-trigger.ui-state-hover, .ui-selectonemenu .ui-selectonemenu-trigger.ui-state-focus {
+  color: #ffffff !important;
+  background-color: #FFF;
+  border: 1px solid #d0d0d0 !important;
+  border-left: none !important;
+}
+.ui-selectonemenu-trigger .ui-icon-triangle-1-s {
+  background-image: url('../img/Arrow.svg') !important;
+  background-size: 44%;
+  transform: rotate(90deg);
+}
+.ui-selectonemenu-panel .ui-state-highlight{
+  color: #000 !important;
+}
+.ui-selectonemenu-panel .ui-selectonemenu-list-item, .ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-list-item {
+  color: #000;
+}
+
+/** Botones */
+.ui-button, .ui-button.ui-state-focus {
+  border-radius: 0px !important;
+  font-size: 15px;
+  font-family: 'Gotham Bold', Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  background-color: #f95752;
+  text-transform: uppercase;
+  box-shadow: none !important;
+  display: inline-block;
+  width: auto !important;
+}  
+.ui-button.ui-state-hover{
+  background-color: #000;
+}
+
+/** Tablas */
+.ui-datatable{
+  border: none;
+}
+.ui-datatable .ui-datatable-header{
+  color: #000;
+  background-color: #FFF;
+  border-radius: 0px !important;
+  font-size: 15px;
+  padding: 15px 10px !important;
+  font-family: 'Gotham Medium', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+/** Paginación */
+.ui-paginator-top, .ui-paginator-bottom{
+  background-color: #FFF;
+}
+.ui-paginator .ui-paginator-current {
+  font-size: 14px;
+  color: #000;
+  font-family: 'Gotham Book', Helvetica, Arial, sans-serif;
+}
+.ui-paginator .ui-paginator-prev .ui-icon {
+  background-image: url('../img/ArrowLeft.svg');
+  background-size: 50%;
+}
+.ui-paginator .ui-paginator-first .ui-icon {
+  background-image: url('../img/ArrowLeft.svg');
+  background-size: 50%;
+}
+.ui-paginator .ui-paginator-next .ui-icon {
+  background-image: url('../img/Arrow.svg');
+  background-size: 50%;
+}
+.ui-paginator .ui-paginator-last .ui-icon {
+  background-image: url('../img/Arrow.svg');
+  background-size: 50%; 
+}
+.ui-datatable table thead tr th, .ui-datatable table tfoot tr td, .ui-datatable table thead tr th {
+  color: #000;
+  background-color: #FFF;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-family: 'Gotham Medium', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+.ui-datatable table tbody tr td {
+  color: #000;
+  border:none;
+  border-bottom: 1px solid #e7e7e7;
+  font-size: 14px;
+  font-family: 'Gotham Book', Helvetica, Arial, sans-serif;
+  padding: 15px 10px !important;
+  text-transform: lowercase;
+}
+.ui-datatable table tbody tr td::first-letter{
+  text-transform: uppercase;
+}
+.ui-datatable .ui-datatable-even, .ui-datatable .ui-datatable-odd{
+  background-color: #fbfbfb;
+}
+.ui-datatable table tbody .ui-state-hover > td, .ui-datatable table tbody .ui-state-highlight > td{
+  background-color: #f95752;
+  color: #FFF;
+}
+
+/** Iconos */
+.ui-selectonemenu-panel .ui-selectonemenu-filter-container .ui-icon-search {
+  width: 22px;
+  height: 22px;
+  background-image: url('../img/Search.svg');
+  left: 12px !important;
+  top: 15px !important;
+}
+
+
+
+
