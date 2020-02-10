@@ -144,20 +144,6 @@ body {
 }
 
 
-/*estilos de cabeceras de las tablas*/
-
-.ui-datatable table thead tr th, .ui-datatable table tfoot tr td, .ui-datatable table thead tr th {
-    font-size: 12px !important;
-}
-
-.ui-datatable .ui-datagrid-header,
-.ui-datatable .ui-datatable-header,
-.ui-datatable .ui-datatable-subtable-header,
-.ui-datatable .ui-datatable-summaryrow{
-	background-color: transparent !important;
-	color: gray !important;
-}
-
 /*cabeceras de los listados en movil ponerlos en negrita*/
 .ui-datatable-reflow .ui-datatable-data td .ui-column-title {
     font-weight: bolder;
@@ -206,81 +192,6 @@ body {
 	font-weight: bolder !important;
 	cursor: pointer !important;
 }
-
-
-/*borders de las tablas*/
-/*
-.ui-datatable table tbody tr td,
-.ui-datatable table thead tr th,
-.ui-datatable table tfoot tr td,
-.ui-datatable table thead tr th 
-{border: none !important;}*/
-
-/*cabeceras con filtro de las tablas*/
-.ui-datatable th .ui-inputfield{
-	font-size: 13px !important;
-	margin-top: 5px;
-}
-
-.ui-datatable .ui-sortable-column {
-    vertical-align: bottom;
-}
-
-th.ui-filter-column{
-	vertical-align: bottom !important;
-}
-
-
-
-/* tamaño de fuente del contenido de la tabla*/
-.ui-datatable table tbody tr td{
-	font-size: 12px !important;
-}
-
-/*buscador cabecera de las tablas*/
-/*.ui-datatable .ui-datagrid-header, .ui-datatable .ui-datatable-header, .ui-datatable .ui-datatable-subtable-header, .ui-datatable .ui-datatable-summaryrow {
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: normal;
-    padding-right: 20px !important;
-}*/
-
-/*filas seleccionadas*/
-.ui-datatable table tbody .ui-state-highlight > td {
-    background-color: #208bc6 !important;
-    color: #ffffff !important;
-}
-
-/*cabecera de listado con buscador*/
-.ui-datatable table thead tr th.ui-state-active,
-.ui-datatable .ui-datatable-sticky table thead tr th.ui-state-active {
-    background-color: #208bc6 !important; /*no se lo come*/
-    color: #fff;
-}
-
-
-/*
-para quitar el espacio de la izquierda al datalist
-.ui-datalist .ui-datalist-content .ui-datalist-data {
-	padding-left: 5px !important;
-}
-
-/*checkbox y radiobutton*/
-/*
-.ui-radiobutton .ui-state-active .ui-icon-bullet, .ui-radiobutton .ui-state-focus .ui-icon-bullet{
-	background-color: #0288D1;
-	border-color: #455A64 !important;
-}
-
-.ui-radiobutton .ui-state-hover, .ui-radiobutton .ui-state-active{
-	border-color: #455A64 !important;
-}
-
-.ui-chkbox-box .ui-icon-check{
-	border-bottom: solid 3px #000;
-	border-right: solid 3px #000;
-}
-*/
 
 /*objeto calendario*/
 .ui-datepicker-calendar tbody tr .ui-datepicker-current-day {
@@ -826,88 +737,7 @@ componente carousel
 
  */
  
- /*personalizacion de colores para los combos select*/
- .ui-selectonemenu-panel .ui-state-highlight, .ui-selectcheckboxmenu-panel .ui-state-highlight {
-    color: #fff !important;
-    background-color: #3E98D3 !important;
-}
 
-/*cambio de fuente de dosis a verdana*/
-
-body {font-family: verdana !important;}
-.ui-widget{font-family: verdana !important;}
-.ui-widget .ui-widget{font-family: verdana !important;}
-.ui-datatable{font-family: verdana !important;}
-.ui-datatable .ui-paginator .ui-paginator-current{font-family: verdana !important;}
-.ui-datatable .ui-paginator .ui-paginator-rpp-options{font-family: verdana !important;}
-.ui-datatable table tbody td{font-family: verdana !important;}
-.ui-datatable-fs .ui-datatable-frozenlayout-right,
-.ui-datatable-fs .ui-datatable-frozenlayout-left{font-family: verdana !important;}
-.ui-datatable table thead tr th,
-.ui-datatable table tfoot tr td,
-.ui-datatable table thead tr th {font-family: verdana !important;}
-.ui-datatable table tbody tr td{font-family: verdana !important;}
-.ui-datatable-footer {font-family: verdana !important;}
-.ui-datagrid {font-family: verdana !important;}
-.ui-datagrid .ui-paginator .ui-paginator-rpp-options {font-family: verdana !important;}
-.ui-datalist {font-family: verdana !important;}
-.ui-datalist .ui-datalist-header {font-family: verdana !important;}
-.ui-datalist .ui-datalist-content .ui-datalist-data {font-family: verdana !important;}
-.ui-datalist .ui-paginator .ui-paginator-rpp-options {font-family: verdana !important;}
-.fc-header {font-family: verdana !important;}
-.fc-header-center {font-family: verdana !important;}
-.fc {font-family: verdana !important;}
-.fc-toolbar button  {font-family: verdana !important;}
-.fc-toolbar .ui-state-active,
-.fc-toolbar .ui-state-hover {font-family: verdana !important;}
-.fc-center {font-family: verdana !important;}
-.fc-view-container .fc-content-skeleton table thead tr .fc-sun,
-.fc-view-container .fc-content-skeleton table thead tr .fc-sat {font-family: verdana !important;}
-.fc-view-container table tbody tr .fc-day {font-family: verdana !important;}
-.ui-picklist {font-family: verdana !important;}
-.ui-orderlist {font-family: verdana !important;}
-.ui-orderlist .ui-orderlist-list .ui-state-highlight {font-family: verdana !important;}
-.ui-carousel {font-family: verdana !important;}
-.ui-carousel .ui-carousel-header {font-family: verdana !important;}
-.ui-tree {font-family: verdana !important;}
-.ui-treetable {font-family: verdana !important;}
-.ui-treetable .ui-treetable-header {font-family: verdana !important;}
-.ui-treetable table tbody .ui-state-highlight td {font-family: verdana !important;}
-.ui-accordion {font-family: verdana !important;}
-.ui-panelgrid {font-family: verdana !important;}
-.ui-fieldset {font-family: verdana !important;}
-.ui-fieldset-legend {font-family: verdana !important;}
-.ui-inputfield {font-family: verdana !important;}
-.ui-button-text {font-family: verdana !important;}
-.ui-menu .ui-menu-list .ui-widget-header {font-family: verdana !important;}
-.ui-menu .ui-menuitem .ui-menuitem-link {font-family: verdana !important;}
-.ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem a {font-family: verdana !important;}
-.ui-panel .ui-panel-titlebar {
-	font-family: verdana !important;
-	background-color: #999;
-	color: #fff;
-}
-.ui-datagrid .ui-panel .ui-panel-titlebar {font-family: verdana !important;}
-.ui-panel .ui-panel-content.ui-widget-content {font-family: verdana !important;}
-.ui-selectonemenu, .ui-selectcheckboxmenu {font-family: verdana !important;}
-.ui-selectcheckboxmenu {font-family: verdana !important;}
-#keypad-div .keypad-row button {font-family: verdana !important;}
-.ui-password-panel {font-family: verdana !important;}
-.ui-inputswitch {font-family: verdana !important;}
-.ui-selectonelistbox {font-family: verdana !important;}
-.ui-selectmanymenu {font-family: verdana !important;}
-.ui-datepicker {font-family: verdana !important;}
-.ui-editor {font-family: verdana !important;}
-.ui-outputlabel {font-family: verdana !important;}
-.ui-progressbar-label {font-family: verdana !important;}
-.ui-autocomplete-input-token input[type="text"] {font-family: verdana !important;}
-.ui-multiselectlistbox .ui-multiselectlistbox-listcontainer .ui-multiselectlistbox-header {font-family: verdana !important;}
-.ui-multiselectlistbox .ui-multiselectlistbox-listcontainer .ui-multiselectlistbox-list {font-family: verdana !important;}
-.ui-layout-container .ui-layout-unit {font-family: verdana !important;}
-.ui-layout-unit .ui-layout-unit-header {font-family: verdana !important;}
-.ui-layout-unit .ui-layout-unit-header .ui-layout-unit-header-title {font-family: verdana !important;}
-.ui-wizard .ui-wizard-step-titles li {font-family: verdana !important;}
-#layout-menu > li > a {font-family: verdana !important;}
 
 .ui-selection-column{width: 40px !important;}
 
@@ -1087,18 +917,6 @@ body {font-family: verdana !important;}
 
 /*modulos*/
 
-.CardSmallTopic {
-    display: block;
-    font-family: verdana !important;
-    font-size: 1.3rem;
-    padding: 0px 0px !important;
-    color: #000 !important;
-}
-
-.Card{
-	padding-top: 10px !important;
-	border: solid 1px #d6d6d6 !important;
-}
 
 /*celdas de las tablas de la home*/
 .ui-panelgrid-content {
@@ -1167,19 +985,6 @@ body {font-family: verdana !important;}
 /*cabecera de los modulos*/
 .Card.cabecera{
 	padding: 0px !important;
-}
-
-.CardSmallTopic.cabecera{
-	padding-top: 10px !important;
-    padding-left: 20px !important;
-    padding-bottom: 10px !important;
-    border-bottom: solid 1px #ccc !important;
-    background: #f0f2f4; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#f6f7f9, #ebedf0); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#f6f7f9, #ebedf0); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#f6f7f9, #ebedf0); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#f6f7f9, #ebedf0); /* Standard syntax */
-    min-height: 18px;
 }
 
 /*en dispositivos moviles oculto el fondo y el borde para qu eno se monte y no de problemas*/
@@ -1463,236 +1268,11 @@ a.ui-commandlink:hover{
 }
 
 
-/*FORMULARIOS*/
-/*elementos de formulario*/
-#layout-portlets-cover{
-	color: #000 !important; 
-	font-size: 12px !important;
-	margin-top: 20px !important;
-}
-
-.ui-inputfield {
-    background-color: #ffffff !important;
-    font-size: 12px !important;
-}
-
-.ui-outputlabel {
-    font-size: 12px !important;
-    margin-top: 5px !important;
-    vertical-align: -webkit-baseline-middle !important;
-}
-
-/*combobox*/
-.ui-fluid .ui-selectonemenu .ui-selectonemenu-trigger {
-    width: 35px !important;
-    height: 29px !important;
-}
-
-.ui-selectonemenu .ui-selectonemenu-trigger, 
-.ui-selectcheckboxmenu .ui-selectcheckboxmenu-trigger {
-    background-color: #999;
-}
-
-.ui-selectonemenu-panel {
-    border: solid 1px #999 !important;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5) !important;
-    -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5) !important;
-    -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5) !important;
-}
-
-/*selects que necesitan flotar por encima de los dialogos*/
-.ui-dialog .ui-selectonemenu-panel {
-    left: auto !important;
-    top: auto !important;
-    /*position: fixed !important;*/
-}
-.ui-selectonemenu-panel .ui-selectonemenu-list-item, .ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-list-item {
-    border-bottom: solid 1px #FFF !important;
-    font-size: 12px !important;
-    color: #fff !important;
-    background-color: #8c8c8c !important;
-}
-
-.ui-selectonemenu-panel .ui-selectonemenu-list-item.ui-state-hover, 
-.ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-list-item.ui-state-hover {
-	font-weight: bolder !important;
-	color: #000 !important;
-    background-color: #fff !important;	
-}
-
-/*radiobuttons*/
-.ui-selectoneradio label {
-    color: #000 !important;
-    font-size: 12px !important;
-}
-
-.ui-radiobutton .ui-state-active .ui-icon-bullet, .ui-radiobutton .ui-state-focus .ui-icon-bullet {
-	background-color: #666 !important;
-}
-
-.ui-radiobutton .ui-radiobutton-box {
-    border: solid 1px #000 !important;
-}
-
-.ui-radiobutton .ui-state-active .ui-icon-bullet, .ui-radiobutton .ui-state-focus .ui-icon-bullet {
-    background-image: none !important;
-}
-
-/*checkbuttons*/
-/*bajar los checkbuttons en los formularios para alinearlos con el texto*/
-.chrome .ui-fluid .ui-chkbox .ui-chkbox-box {
-    position: relative !important;
-    top: 4px !important;;
-}
-
-/*mantener los checkbox a ras cuando estan dentro de las tablas*/
-.chrome .ui-fluid .ui-datatable .ui-chkbox .ui-chkbox-box{
-	position: relative !important;
-    top: 0px !important;
-}
-
-/*checkbox dentro de un select list box*/
-.chrome .ui-selectmanymenu .ui-selectlistbox-item .ui-chkbox {
-     margin-top: -10px !important;
-}
-
-/*boton de mas menos ui-spinner-buton*/
-.ui-spinner-button .ui-button-text{
-	background-color: #999999;
-}
-
-/*tablas de datos*/
-.ui-datatable {
-    border: none !important;
-    background-color: transparent;
-    color: #000 !important;
-    font-family: verdana !important;
-}
-
-.ui-datatable .ui-datagrid-header, .ui-datatable .ui-datatable-header, .ui-datatable .ui-datatable-subtable-header, .ui-datatable .ui-datatable-summaryrow {
-    color: #000 !important;
-    background-color: transparent !important;
-    font-size: 14px !important;
-    border-bottom: none !important;
-}
-
-.ui-datatable table thead tr th, .ui-datatable table tfoot tr td, .ui-datatable table thead tr th {
-    color: #000 !important;
-    background-color: #d4d6d8 !important;
-    border: solid 1px #ccc !important;
-}
-
-.tablaPropuestasInversion table thead tr th, .tablaPropuestasInversion table tfoot tr td, .tablaPropuestasInversion table thead tr th {
-    color: #000 !important;
-    background-color: #d4d6d8 !important;
-    border: solid 2px #fff !important;
-	font-size: 10px !important;
-}
-
-.tablaHtml table thead tr th, .tablaHtml table tfoot tr td, .tablaHtml table thead tr th {
-    color: #000 !important;
-    background-color: #f5d19d !important;
-    border: solid 2px #000 !important;
-	}
-
-.tablaPropuestasInversion.ui-datatable table tbody tr td a,
-.ui-dialog .ui-datatable table tbody tr td a{
-	 font-size: 10px !important;
-	 text-decoration: none !important;
-	 color: #000 !important;
-}
-
-.tablaPropuestasInversion.ui-datatable table tbody tr td a:hover,
-.ui-dialog .ui-datatable table tbody tr td a:hover{
-    color: #666 !important;
-    border: none !important;
-    font-size: 10px !important;
-    text-decoration: none !important;
-}
-
-
-.ui-datatable table thead tr th.ui-state-active,
-.ui-datatable .ui-datatable-sticky table thead tr th.ui-state-active {
-    background-color: #999 !important;
-    color: #fff !important;
-}
-
-.ui-datatable table thead tr th.ui-state-hover, .ui-datatable .ui-datatable-sticky table thead tr th.ui-state-hover {
-    background-color: #999 !important;
-    color: #fff !important;
-}
-
-
-.ui-datatable .ui-paginator .ui-paginator-current {
-    font-size: 12px !important;
-}
-
-.ui-datatable .ui-paginator-top,
- .ui-datatable .ui-paginator-bottom{
-    background-color: transparent !important;
-}
-
-.ui-datatable .ui-paginator .ui-paginator-first,
-.ui-datatable .ui-paginator .ui-paginator-prev,
-.ui-datatable .ui-paginator .ui-paginator-pages .ui-paginator-page,
-.ui-datatable .ui-paginator .ui-paginator-next,
-.ui-datatable .ui-paginator .ui-paginator-last{
-    font-size: 14px !important;
-    border: none !important;
-    color: #000 !important;
-}
-
-.ui-datatable .ui-paginator .ui-paginator-rpp-options {
-    font-size: 14px !important;
-    border: solid 1px #ccc !important;
-    border-radius: 4px !important;
-    color: #000 !important;
-}
-
-/*paginador de las tablas*/
-.ui-datatable .ui-paginator .ui-state-active,
-.ui-datatable .ui-paginator .ui-paginator-pages .ui-state-active {
-   color: #778d9b !important;
-   border-bottom: solid 2px #778d9b !important; 
-}
-
-.ui-fieldset-legend {
-    color: #ffffff !important;
-    font-size: 14px !important;
-    font-family: verdana !important;
-    background-color: #999 !important;
-}
-
-.ui-datatable .ui-datatable-header .ui-outputpanel input.ui-inputfield{
-	/*width: 80% !important;*/
-}
-
-.ui-datatable-footer{
-	background-color: transparent !important;
-}
-
-.CardBigTopic {
-    font-family: verdana !important;
-    color: #000 !important;
-    font-size: 14px !important;
-    font-weight: bolder !important;
-}
-
 .rojoTenue {
     background-color: #F78181 !important;
 }
 
-.GrayButton .ui-button-text{
-	background: #f0f2f4 !important; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#f6f7f9, rgba(0, 0, 0, 0.2)) !important; /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#f6f7f9, rgba(0, 0, 0, 0.2)) !important; /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#f6f7f9, rgba(0, 0, 0, 0.2)) !important; /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#f6f7f9, rgba(0, 0, 0, 0.2)) !important; /* Standard syntax */
-    color: #000 !important;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1) !important;
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1) !important;
-    -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1) !important;
-}
+
 
 @media all and (max-width: 800px){
 	.GrayButtonMobile{
@@ -1701,10 +1281,10 @@ a.ui-commandlink:hover{
 }
 
 .miniButton{
-	min-width: 28px !important;
-    max-width: 28px !important;	
-    min-height: 28px !important;
-    max-height: 28px !important;
+	min-width: 41px !important;
+    max-width: 41px !important;	
+    min-height: 41px !important;
+    max-height: 41px !important;
 }
 
 .miniButton .ui-button-text {
@@ -2062,19 +1642,6 @@ a.ui-commandlink:hover{
 	    bottom: 17px;
 	}
 }
-
-/*dialogos emergentes*/
-.ui-dialog .ui-dialog-titlebar {
-	background-color: #404A4E !important;
-	border: solid 1px #fff !important;
-}
-
-.ui-dialog{
-	 box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05) !important;
-    -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05) !important;
-    -moz-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05) !important;
-    max-height:  85% !important;
- }
 
 /*clase especifica para los dialogos interiores*/
 /*controla  que se muestre solo el scroll cuando es necesario y maximo de alto para que sea visible bien*/
