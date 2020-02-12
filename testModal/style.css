@@ -1,0 +1,19 @@
+body{
+  margin: 0;
+}
+*{
+  box-sizing: border-box;
+}
+
+#contenedorIframe iframe{
+  height: calc(100vh - 300px);
+  display: block;
+  margin-top: 300px;
+  width: 100%;
+}
+#contenedorIframe.open iframe{
+  height: calc(100vh);
+  display: block;
+  margin-top: 0;
+  width: 100%;
+}
