@@ -1,4 +1,5 @@
 @import 'estilosAtresmedia.css';
+@import 'distributiva.css';
 
 @font-face { 
   font-family: 'Gotham Book'; 
@@ -38,7 +39,7 @@ body{
 .ShadowEffect{
   box-shadow: none;
 }
-.outer-container{
+.outer-container, #layout-portlets-cover{
   max-width: 1220px;
   margin: 0 auto;
 }
@@ -55,6 +56,40 @@ body{
 }
 .ui-corner-all{
   border-radius: 0 !important
+}
+.Container100{
+  max-width: 1220px;
+  margin: 0 auto;
+  float: none;
+}
+.bubble {
+  background-color: #f74741;
+  border-radius: 50%;
+  box-shadow: none !important;
+  font-family: 'Gotham Bold', Helvetica, Arial, sans-serif !important;
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  padding: 0 !important;
+  border: 1px #FFF solid !important;
+  position: relative;
+  left: -8px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  display: inline-block;
+  text-align: center;
+}
+.enlaceMenuModulo i{
+  color: #000 !important;
+  font-size: 22px !important;
+  cursor: pointer;
+}
+.ui-commandlink{
+  color: #000 !important;
+}
+.FontBold{
+  font-family: 'Gotham Bold', Helvetica, Arial, sans-serif !important;
+  font-weight: 700 !important;
 }
 
 /** Layout */
@@ -74,10 +109,12 @@ body{
 /** widget */
 .ui-widget{
   font-family: 'Gotham Book', Helvetica, Arial, sans-serif !important;
+  font-weight: 400 !important;
 }
-.ui-widget .ui-widget{
+/* .ui-widget .ui-widget{
   font-family: 'Gotham Medium', Helvetica, Arial, sans-serif !important;
-}
+  font-weight: 500 !important;
+} */
 .ui-widget .ui-state-focus, .ui-widget.ui-state-focus{
   box-shadow: none
 }
@@ -91,6 +128,7 @@ body{
   padding: 0;
   color: #000;
   font-family: 'Gotham Book', Helvetica, Arial, sans-serif;
+  font-weight: 400 !important;
 }
 .ui-tree .ui-treenode .ui-treenode-label{
   font-size: 15px;
@@ -116,6 +154,7 @@ body{
 /** Cards */
 .Card {
   font-family: 'Gotham Book', Helvetica, Arial, sans-serif;
+  font-weight: 400 !important;
   color: #000;
   border: none;
   padding: 15px 0;
@@ -123,6 +162,7 @@ body{
 .CardTopic {
   font-size: 16px;
   font-family: 'Gotham Medium', Helvetica, Arial, sans-serif;
+  font-weight: 500 !important;
   margin: 0px;
   padding: 10px 0px;
   width: 100%;
@@ -131,6 +171,7 @@ body{
 }
 .CardSmallTopic {
   font-family: 'Gotham Medium', Helvetica, Arial, sans-serif;
+  font-weight: 500 !important;
   font-size: 14px;
   color: #000;
   text-transform: uppercase;
@@ -144,19 +185,21 @@ body{
 label{
   font-size: 14px;
   font-family: 'Gotham Medium', Helvetica, Arial, sans-serif;
+  font-weight: 500 !important;
   width: 100%;
-    display: flex;
-    align-items: center;
-    height: 41px;
-    flex-wrap: wrap;
-    text-align: right;
-    justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  height: 41px;
+  flex-wrap: wrap;
+  text-align: right;
+  justify-content: flex-end;
 }
 /* Input */
 .ui-inputfield, .ui-inputfield.ui-state-hover, .ui-inputfield.ui-state-focus {
   color: #000 !important;
   font-size: 14px;
   font-family: 'Gotham Book', Helvetica, Arial, sans-serif !important;
+  font-weight: 400 !important;
   padding: 12px 10px 11px 10px !important;
   border: 1px solid #d0d0d0;
   background-color: #FFF;
@@ -169,9 +212,33 @@ label{
   justify-content: flex-end;  
   height: 41px;
   align-items: center;
+  font-family: 'Gotham Medium', Helvetica, Arial, sans-serif !important;
+  font-weight: 500 !important;
 }
 ::-webkit-input-placeholder{
   color: #898989;
+}
+/* fieldset */
+.ui-fieldset {
+  border: solid 1px #d0d0d0;
+  background-color: #f3f3f3;
+  font-family: 'Gotham Book', Helvetica, Arial, sans-serif !important;
+  font-weight: 400 !important;
+  border-radius: 0;
+}
+.ui-fieldset-content {
+  font-size: 15px;
+  color: #000;
+}
+form[id="resultForm"]{
+  margin-top: 20px;
+} 
+/* Legend */
+.ui-fieldset-legend{
+  font-size: 15px;
+  font-family: 'Gotham Medium', Helvetica, Arial, sans-serif !important;
+  font-weight: 500 !important;
+  background-color: #898989;
 }
 /* Autocomplete */
 .ui-fluid .ui-autocomplete-input{
@@ -182,7 +249,9 @@ label{
 }
 /* Checkbox */
 .ui-chkbox + label{
-  display: inline
+  display: inline;
+  position: relative;
+  top: -4px;
 }
 .ui-chkbox .ui-chkbox-box {
   background: none;
@@ -213,7 +282,10 @@ label{
 .ui-selectoneradio label, .ui-fluid .ui-selectoneradio label{
   text-align: left;
   color: #000;
-  margin: 20px 15px 0px 0px !important
+  margin: 20px 15px 0px 0px !important;
+  font-size: 14px;
+  font-family: 'Gotham Book', Helvetica, Arial, sans-serif;
+  font-weight: 400;
 }
 .ui-radiobutton .ui-state-active .ui-icon-bullet, .ui-radiobutton .ui-state-focus .ui-icon-bullet {
   background-image: none !important;
@@ -307,6 +379,7 @@ label{
   border-radius: 0px !important;
   font-size: 15px;
   font-family: 'Gotham Bold', Helvetica, Arial, sans-serif;
+  font-weight: 700 !important;
   color: #ffffff;
   background-color: #000;
   text-transform: uppercase;
@@ -318,11 +391,19 @@ label{
 }  
 .ui-button-text{
   transition: 0s !important;
+  font-family: 'Gotham Bold', Helvetica, Arial, sans-serif;
+  font-weight: 700 !important;
+  color: #ffffff;
+  background-color: #000;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 12px 20px 10px 40px !important;
 }
 .GrayButton .ui-button-text, .GrayButton.ui-state-focus .ui-button-text, .GrayButton.ui-state-active .ui-button-text{
   border-radius: 0px !important;
   font-size: 15px;
   font-family: 'Gotham Bold', Helvetica, Arial, sans-serif;
+  font-weight: 700 !important;
   color: #ffffff;
   background-color: #000 !important;
   text-transform: uppercase;
@@ -330,7 +411,7 @@ label{
   width: auto !important;
   border: none !important;  
 }
-.ui-button.ui-state-hover, .GrayButton.ui-state-hover .ui-button-text{
+.ui-button.ui-state-hover, .GrayButton.ui-state-hover .ui-button-text, .ui-button.ui-state-hover .ui-button-text{
   background-color: #4c4c4c !important;
 }
 /* botones inferiores*/
@@ -351,21 +432,23 @@ color: #000;
   /** Tablas */
 .ui-datatable{
   border: none;
-  background-color: #FFF;
+  background-color: transparent;
 }
 .ui-datatable table{
   border: none;
 }
 .ui-datatable table thead tr th.ui-state-hover{
-  background-color: #4c4c4c !important;
+  background-color: #e7e7e7 !important;
+  color: #000;
 }
 .ui-datatable .ui-datatable-header{
   color: #000;
-  background-color: #FFF;
+  background-color: transparent;
   border-radius: 0px !important;
   font-size: 15px;
   padding: 15px 10px !important;
   font-family: 'Gotham Medium', Helvetica, Arial, sans-serif;
+  font-weight: 500 !important;
   text-transform: uppercase;
 }
 .ui-datatable .ui-datagrid-header, .ui-datatable .ui-datatable-header, .ui-datatable .ui-datatable-subtable-header, .ui-datatable .ui-datatable-summaryrow{
@@ -380,17 +463,27 @@ color: #000;
 table tbody tr td{
   color: #000;
 }
+.ui-panelgrid thead tr td, .ui-panelgrid tfoot tr td{
+  border: solid 1px #d0d0d0 !important;
+}
+.ui-datatable .ui-datatable-scrollable-header{
+  background-color: transparent !important;
+}
 
 /** Paginación */
 .ui-paginator-top, .ui-paginator-bottom{
+  background-color: #FFF;
+}
+.ui-datatable .ui-paginator-bottom {
   background-color: #FFF;
 }
 .ui-paginator .ui-paginator-current {
   font-size: 14px;
   color: #000;
   font-family: 'Gotham Book', Helvetica, Arial, sans-serif;
+  font-weight: 400 !important;
 }
-.ui-paginator .ui-paginator-prev .ui-icon {
+.ui-paginator .ui-paginator-prev .ui-icon, .ui-datatable .ui-paginator .ui-paginator-prev .ui-icon {
   background-image: url('../img/ArrowLeft.svg');
   background-size: 50%;
 }
@@ -402,22 +495,37 @@ table tbody tr td{
   background-image: url('../img/Arrow.svg');
   background-size: 50%;
 }
-.ui-paginator .ui-paginator-last .ui-icon {
+.ui-paginator .ui-paginator-last .ui-icon, .ui-datatable .ui-paginator .ui-paginator-next .ui-icon {
   background-image: url('../img/Arrow.svg');
   background-size: 50%; 
 }
+.ui-datatable .ui-paginator .ui-paginator-last .ui-icon {
+  background-image: url('../img/DobleArrow.svg');  
+  background-size: 98%;
+}
+.ui-datatable .ui-paginator .ui-paginator-first .ui-icon {
+  background-image: url('../img/DobleArrow.svg'); 
+  background-size: 92%;
+  transform: rotate(180deg);
+}  
+
 .ui-datatable table thead tr th, .ui-datatable table tfoot tr td, .ui-datatable table thead tr th {
   color: #000;
-  background-color: #FFF;
+  background-color: transparent;
   border: none;
   outline: none;
   padding: 10px;
   font-family: 'Gotham Medium', Helvetica, Arial, sans-serif;
+  font-weight: 500 !important;
   font-size: 14px;
   font-weight: 500;
 }
+.ui-datatable table thead tr th.ui-state-active, .ui-datatable table thead tr th.ui-state-focus, .ui-datatable .ui-datatable-sticky table thead tr th.ui-state-active {
+  background-color: #d0d0d0 !important;
+  color: #000;
+}
 .ui-datatable table thead tr th.ui-state-focus{
-  background-color: #4c4c4c !important;
+  background-color: #d0d0d0 !important;
 }
 .ui-datatable table tbody tr td {
   color: #000;
@@ -425,6 +533,7 @@ table tbody tr td{
   border-bottom: 1px solid #e7e7e7 !important;
   font-size: 14px;
   font-family: 'Gotham Book', Helvetica, Arial, sans-serif;
+  font-weight: 400 !important;
   padding: 15px 10px !important;
   text-transform: lowercase;
   transition: 0s !important;
@@ -440,20 +549,57 @@ table tbody tr td{
   color: #FFF;
   transition: 0s !important;
 }
+.ui-datatable .ui-paginator .ui-paginator-pages .ui-paginator-page{
+  color: #000;
+}
+.ui-datatable .ui-paginator .ui-paginator-current{
+  color: #000;
+  font-family: 'Gotham Book', Helvetica, Arial, sans-serif;
+  font-weight: 400 !important;
+}
+.ui-datatable .ui-paginator .ui-state-hover{
+  border: 1px #fff solid !important;
+}
+.ui-datatable .ui-paginator-top{
+  background: none;
+}
 
 /** Iconos */
-.ui-selectonemenu-panel .ui-selectonemenu-filter-container .ui-icon-search {
+.ui-selectonemenu-panel .ui-selectonemenu-filter-container .ui-icon-search, .ui-selectmanymenu .ui-selectlistbox-filter-container .ui-icon-search {
   width: 22px;
   height: 22px;
   background-image: url('../img/Search.svg');
-  left: 12px !important;
+  left: 10px !important;
   top: 15px !important;
+}
+.ui-selectmanymenu .ui-selectlistbox-filter-container .ui-icon-search{
+  top: 10px !important;
 }
 .ui-datatable table thead tr .ui-state-default .ui-icon-carat-2-n-s, .ui-datatable .ui-datatable-sticky table thead tr .ui-state-default .ui-icon-carat-2-n-s {
   background-image: url('../img/Ordenacion.svg');
   background-size: 70%;
   
 }
+.ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon .ui-icon-extlink {
+  background-image: url('../img/Full-size.svg');
+  margin-right: 10px;
+}
+.ui-dialog .ui-dialog-titlebar .ui-icon-newwin {
+  background-image: url('../img/Full-size-out.svg');
+  margin-right: 10px;
+}
+.ui-panel .ui-panel-titlebar .ui-icon-minusthick {
+  background-image: url('../img/Minus.svg') !important;
+  background-size: 100% !important;
+}
+.ui-panel .ui-panel-titlebar .ui-icon-plusthick {
+  background-image: url('../img/Plus.svg') !important;
+  background-size: 100% !important;
+}
+.ui-message-info-icon {
+  background: url('../img/Warning.svg') no-repeat;
+}
+
 
 /** Tabs */
 .ui-tabs-top{
@@ -502,6 +648,7 @@ table tbody tr td{
 }
 .ui-datepicker .ui-datepicker-title select{
   font-family: 'Gotham Book', Helvetica, Arial, sans-serif;
+  font-weight: 400 !important;
   font-size: 12px !important;
 }
 .ui-datepicker-calendar thead tr th{
@@ -513,12 +660,18 @@ table tbody tr td{
   background-color: #e7e7e7;
 }
 .ui-datepicker-calendar tbody tr td{
-  border: 1px #d0d0d0 solid;
+  border: 1px #FFF solid;
   border-radius: 0;
 }
+.ui-datepicker td a{
+  text-align: center;
+}
 .ui-datepicker-calendar tbody tr td:hover {
-  border: 1px #d0d0d0 solid;
+  border: 1px #FFF solid;
   background-color: #f95752 !important;
+}
+.ui-datepicker-calendar tbody tr td:hover a{
+  color: #FFF;
 }
 .ui-datepicker-calendar tbody tr td a.ui-state-hover{
   background-color: #f95752 !important;
@@ -533,6 +686,33 @@ table tbody tr td{
   color: #000 !important;  
 }
 
+/** Timepicker */
+.ui-timepicker-div .ui-widget-header{
+  background-color: #000 !important;  
+}
+.ui-datepicker .ui-datepicker-title{
+  font-family: 'Gotham Medium', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+.ui-timepicker-div{
+  color: #000;
+}
+.ui-slider-handle{
+  border: none !important;
+  background-color: #87c139 !important;
+  border-radius: 50% !important;
+  box-shadow: none;
+  ;
+}
+.ui-slider-handle.ui-state-hover{
+  border: none !important;
+  box-shadow: none !important;
+}
+.ui-slider{
+  background-color: #FFF;
+  border: 1px #87c139 solid;
+  border-radius: 10px !important;
+}
 /* alertas */
 .ui-growl-item{
   background-color: #FFF !important;
@@ -545,6 +725,7 @@ table tbody tr td{
   border-bottom: 1px solid #e7e7e7 !important;
   font-size: 14px !important;
   font-family: 'Gotham Book', Helvetica, Arial, sans-serif !important;
+  font-weight: 400 !important;
   padding: 15px 10px !important;
   text-transform: lowercase;
 }
@@ -567,7 +748,7 @@ table tbody tr td{
   color: #000;
   background-color: #ffffff;
   font-family: 'Gotham Medium', Helvetica, Arial, sans-serif;
-  font-weight: 500;
+  font-weight: 500 !important;
   border-bottom: none !important;
   text-align: center;
   padding-top: 25px !important;
@@ -597,5 +778,28 @@ table tbody tr td{
   background: transparent;
 }
 
+/** Panel */
+.ui-panel{
+  border: 1px solid #d0d0d0;
+  background-color: #fbfbfb;
+}
+.ui-panel .ui-panel-titlebar {
+  font-size: 14px;
+  color: #000;
+  font-family: 'Gotham Bold', Helvetica, Arial, sans-serif;
+  font-weight: 700 !important;
+  border-bottom: none;
+  border-radius: 0 !important;
+  background-color: #f3f3f3;
+  text-transform: uppercase;
+}
 
+/** Mensajes */
+.ui-messages-info, .ui-message-info {
+  color: #60c9de !important;
+  border-color: #60c9de !important;
+}
+
+/** Estilos especificos de formularios */
+#posicionSolicitudForm_PRODUCTOS 
 
