@@ -134,6 +134,14 @@ body{
   font-size: 15px;
   text-transform: lowercase;
 }
+.ui-tree .ui-treenode .ui-treenode-label span{
+  padding-top: 1px;
+  display: inline-block;
+}
+.ui-tree .ui-treenode .ui-treenode-label i{
+  position: relative;
+  top: -6px;
+}
 .ui-tree .ui-treenode .ui-treenode-label.ui-state-hover, .ui-tree .ui-treenode .ui-state-highlight{
   color: #f95752
 }
@@ -369,9 +377,20 @@ form[id="resultForm"]{
 }
 .ui-selectonemenu-panel .ui-selectonemenu-item{
   border: none !important;
+  text-transform: lowercase;
+}
+.ui-selectonemenu-panel .ui-selectonemenu-item:first-letter{
+  text-transform: uppercase;
 }
 .ui-selectonemenu-panel .ui-selectonemenu-item.ui-state-hover{
   background-color: #d0d0d0;
+}
+.ui-selectonemenu-panel .ui-selectonemenu-item-group {
+  background-color: #4c4c4c;
+  text-transform: lowercase;
+}
+.ui-selectonemenu-panel .ui-selectonemenu-item-group:first-letter{
+  text-transform: uppercase;
 }
 
 /** Botones */
@@ -599,6 +618,17 @@ table tbody tr td{
 .ui-message-info-icon {
   background: url('../img/Warning.svg') no-repeat;
 }
+.ui-breadcrumb .ui-icon-home {
+  background-image: url('../img/Home.svg') !important;
+  background-size: 100% !important;
+  height: 23px;
+  width: 18px;
+}
+.ui-breadcrumb-chevron {
+  background-image: url('../img/Arrow.svg') !important; 
+  background-size: 40% !important;
+  margin-top: 6px !important;
+}
 
 
 /** Tabs */
@@ -801,5 +831,12 @@ table tbody tr td{
 }
 
 /** Estilos especificos de formularios */
-#posicionSolicitudForm_PRODUCTOS 
+/* formación */
+#buscadorCursosForm label{
+  display: inline;
+  text-align: left;
+}
+#buscadorCursosForm .ui-datatable table tbody tr td:nth-child(3), #buscadorCursosForm .ui-datatable table tbody tr td:nth-child(4){
+  text-align: center;
+}
 

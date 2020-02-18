@@ -5,21 +5,25 @@
   <body>
     <div>
       <p>Esto es un iframe con un <a class="abrir">link abrir</a></p>
-      <p>Esto es un iframe con un <a class="cerrar">link cerrar</a></p>
+      <p>Esto es un iframe con un <a class="ui-dialog-titlebar-close">link cerrar</a></p>
     </div>
   </body>
-  <script>
-    function abrirModal() {  
-      window.parent.postMessage('toggle("open")', '*');  
-    }  
-    function cerrarModal() {  
-      window.parent.postMessage('toggle("close")', '*');  
-    } 
-    $(".abrir").click(function() {
+<script>
+
+function abrirModal() {  
+  window.parent.postMessage('toggle("open")', '*');  
+}  
+function cerrarModal() {  
+  window.parent.postMessage('toggle("close")', '*');  
+}
+    
+$(document).ready(function(){
+    $(".abrir").on('click', function() {
       abrirModal()
     });
-    $(".cerrar").click(function() {
+    $(".ui-dialog-titlebar-close").on('click', function() {
       cerrarModal()
     });
-  </script>
+})    
+</script>
 </html>

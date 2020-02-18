@@ -5,9 +5,24 @@
 @import url("/a3wf/resources/style/rutasCSS.css");
 
 /*logo pagina principal*/
+#logo{
+	float: none;
+}
+#logo span{
+	transition: 0.5s;
+}
+#logo:hover span{
+	color: #f74741 !important;
+}
+#logo img{
+	position: absolute;
+	top: 14px;
+	right: 18px;
+	display: none;
+}
 #logo img {
     height: auto !important;
-    width: 8rem !important;
+    width: 100px !important;
     margin-left: 20px !important;
 }
 
@@ -34,29 +49,31 @@
 /*titulo de la aplicacion*/
 #tituloAplicacion{
 	 position: relative;
-	 left: 10px;
-	 top: 4px;
+	 top: 10px;
 	 color: #fff !important;
-	 font-family: verdana !important;
+	 font-size: 17px !important;
+	 font-family: 'Gotham Bold', Helvetica, Arial, sans-serif !important;
+	 font-weight: 700 !important;
+	 float: left;
 }
 
 /*color de fondo de la cabecera*/
 #layout-topbar-cover {
-    background-color: #000 !important;
+    background-color: #333 !important;
     color: #fff !important;
-    padding: 0 !important;
-    z-index: 1000 !important;  
+    padding: 5px 0 10px 0 !important;
+		border-bottom: 2px #000 solid !important;
 }
 
 /*contenedor menu principal*/
 #layout-menu-cover{
-	background-color: #2D353C !important;
+	background-color: #000 !important;
 	padding: 0px  0px !important;
 	width: 340px !important; /*ojo esto seguramente habra que regularlo a distintas resoluciones*/
 	height: 100% !important;
 	max-height: 100% !important;
 	color: #000 !important;
-	box-shadow: 2px 2px 2px #2D353C;
+
 	padding-top: 20px !important;
 	/*overflow-y: scroll !important;*/
 	display: none;
@@ -97,8 +114,16 @@
 }
 
 #layout-topbar{
-	margin-top: -10px !important;
-    margin-bottom: -10px !important;
+  max-width: 1220px;
+  margin: -10px auto !important;
+}
+
+/* enlaces plantillas */
+#contenedorEnlaces{
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	margin-bottom: -30px;
 }
 
 /*color de fondo del cuerpo*/
@@ -112,10 +137,8 @@ body {
 
 #moduloUsuario{
 	color: #FFF !important;
-	background-color: #999 !important;
 	padding-bottom: 5px !important; 
 	padding-top: 0px !important;
-	border-top: solid 1px #FFF !important;
 	overflow: hidden;
 	/*margin-top: -5px !important;*/
 }
@@ -125,14 +148,17 @@ body {
     color: #FFF !important;
 	padding-top: 0.8rem !important;
 }
+#topbar-menu > li a i:hover{
+	color: #f74741 !important;
+}
 
 #topbar-menu > li a {
-	padding-right: 0.8rem !important;
-    padding-left: 0.8rem !important;
+	padding-right: 10px !important;
+    padding-left: 11px !important;
 }
 
 #topbar-menu > li a:hover {
-	background-color: #999 !important;
+	background-color:transparent !important;
 }
 
 #topbar-menu{
@@ -427,11 +453,11 @@ mejora mensajes de error
 .enlaceBlanco{
 	color: #fff !important;
 	text-decoration: none !important;
+	transition: 0.5s;
 }
 
 .enlaceBlanco:hover{
-	color: #fff !important;
-	text-decoration: underline !important;
+	color: #f74741 !important;
 }
 
 .fondoMostaza{
@@ -800,13 +826,17 @@ componente carousel
 
 #menu-button {
 	margin-left: 8px !important;
-    float: right !important;
+    float: left !important;
     padding-left: 0.8rem !important;
     padding-right: 0.8rem !important;
 }
 
-#menu-button:hover{
-	background-color: #999 !important;
+#menu-button:hover, #menu-button.active{
+	background-color:transparent !important;
+}
+
+#menu-button:hover i{
+	color: #f74741 !important;
 }
 
 #layout-menu-cover .ui-panelmenu{
@@ -814,6 +844,7 @@ componente carousel
 	background-color: transparent !important;
 	border: none !important;
 	height: 100% !important;
+	width: 100% !important;
 }
 
 @media all and (max-height: 1100px){
@@ -828,6 +859,10 @@ componente carousel
 	}
 }
 
+.ui-panelmenu .ui-menuitem{
+	margin: 2px 0;
+}
+
 .ui-panelmenu .ui-panelmenu-panel {
     /*overflow-y: scroll !important;*/
     height: 100% !important;
@@ -838,9 +873,20 @@ componente carousel
     display: none;
 }
 
-.ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem a{
-	color: #A8ACB1 !important;
-	background-color: transparent;
+.ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem .ui-menuitem-link{
+	color: #FFF !important;
+	background-color: #191919;
+	font-family: 'Gotham Medium', Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	transition: 0.3s;
+}
+.ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem .ui-menuitem-link:hover, .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem .ui-menuitem .ui-menuitem-link:hover{
+	background-color: #f74741 !important;
+}
+
+.ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem .ui-menuitem .ui-menuitem-link{
+	background-color: #000 !important;
+	font-size: 14px;
 }
 
 .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem .ui-state-hover{
@@ -855,16 +901,14 @@ componente carousel
 
 /*bordes superior e inferior*/
 .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content  {
-    background-color: transparent !important;
-    border-top: solid 1px #404A4E  !important;
-    border-bottom: solid 1px #404A4E !important;
+    background-color: #000 !important;
     padding-top: 0px !important;
     padding-bottom: 0px !important;
 }
 
 .ui-menu-parent{
 	border-radius: 0px !important;
-	background-color: #20282B !important;
+	background-color: #000 !important;
 	padding-top: 0px !important;
 	padding-bottom: 0px  !important;
 }
@@ -897,11 +941,12 @@ componente carousel
 
 /*margenes del menu*/
 .ui-panelmenu .ui-menu-parent .ui-menu-list {
-    /*margin-left: 0px !important;*/
+    margin-left: 0px !important;
 }
 
 .ui-panelmenu .ui-menu-parent > .ui-menuitem-link > .ui-icon {
-    left: 0.5em !important;
+		left: 0.5em !important;
+		font-size: 14px !important;
 }
 
 .ui-panelmenu .ui-menu-parent .ui-menuitem-link-hasicon {
@@ -913,7 +958,10 @@ componente carousel
 }
 
 .ui-panelmenu .ui-menu-list.ui-helper-hidden {
-    background-color: #20282B !important;
+    background-color: #000 !important;
+}
+.ui-panelmenu .ui-icon{
+	font-size: 18px;
 }
 
 /*modulos*/
@@ -980,7 +1028,8 @@ componente carousel
 
 .ui-panelgrid{font-size:14px !important;}
 .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem a {
-    font-size: 14px;
+		font-size: 16px;
+		padding: 15px 0 15px 40px !important
 }
 
 /*cabecera de los modulos*/
@@ -1635,17 +1684,15 @@ a.ui-commandlink:hover{
 
 .toolBarMenuPrincipal i,
 .toolBarMenuDerecho i {
-	border: solid 1px #666666 !important;
-	/*border-radius:  50px !important;*/
+ /*border-radius:  50px !important;*/
 	padding: 5px !important;
-	color: #999 !important;
+	color: #FFF !important;
+	margin-top: 15px;
 }
 
 .toolBarMenuPrincipal i:hover,
 .toolBarMenuDerecho  i:hover{
-	background-color: #000 !important;
-	border: solid 1px #000 !important;
-	color: #fff !important;
+	color: #f74741 !important;
 }
 
 #botonCerrarMenuBuscador{
@@ -1747,10 +1794,6 @@ a.ui-commandlink:hover{
 /*combos flotantes sobre la cabecera*/
 /*combos deshabilitados dentro de los dialogos*/
 
-.ui-selectonemenu, .ui-selectonemenu-panel{
-	z-index: 999 !important;
-}
-
 /*solucion bug por el cual se montan los combos dentro de los dialogs*/
 .ui-dialog .ui-selectonemenu{
 	z-index: auto  !important;
@@ -1809,9 +1852,19 @@ a.ui-commandlink:hover{
 	margin-right: 5px !important; /*quito espacio para que no se monte en resoluciones pequeñas*/
 }
 
+.ui-breadcrumb ul li .ui-menuitem-link {
+	font-size: 16px;
+	color: #000;
+	text-transform: lowercase;
+	padding-top: 2px;
+}
+.ui-breadcrumb ul li .ui-menuitem-link:first-letter{
+	text-transform: uppercase;
+}
+
 
 #breadCrumbCabeceraSolicitud{
-	margin-top: -4px !important;
+	margin-top: 25px !important;
 }
 
 
@@ -1822,6 +1875,11 @@ a.ui-commandlink:hover{
 #breadCrumbCabeceraSolicitud.ui-breadcrumb ul li .ui-menuitem-link.textoBreadCrumb.ui-state-disabled {
 	text-decoration: none !important;	
 	color: #000 !important;
+}
+
+/* Contenedor Iconos Superior Derecho Cabecera Solicitud */
+.contenedorIconosSuperiorDerechoCabeceraSolicitud{
+	padding-top: 30px;
 }
 
 /*iconos superior derechos de la solicitud, ajuste para resoluciones moviles*/
@@ -1903,8 +1961,8 @@ a.ui-commandlink:hover{
 
 /*subir la opacidad de los cambios deshabilitados*/
 .ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
-    opacity: .50 !important;
-    filter: alpha(opacity=50) !important;
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
 }
 
 
@@ -1951,3 +2009,6 @@ th[role=columnheader] {
 	text-align: center !important;
 	vertical-align: middle !important;
 }
+
+
+/* Pie */
