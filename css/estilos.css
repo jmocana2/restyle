@@ -42,6 +42,7 @@ body{
 .outer-container, #layout-portlets-cover{
   max-width: 1220px;
   margin: 0 auto;
+  width: 100% !important;
 }
 .Separator, .SeparatorFull {
   border-bottom: none;
@@ -122,6 +123,17 @@ body{
   transition: 0s !important;
 }
 
+/** Toolbar */
+.ui-toolbar{
+  border: none; 
+  background-color: transparent; 
+}
+
+/** Outputpanel */
+
+
+
+
 /** Listado */
 .ui-tree{
   border: none;
@@ -184,6 +196,9 @@ body{
   color: #000;
   text-transform: uppercase;
 }
+.CardBigTopic > .ui-outputlabel{
+  display: inline;
+}
 .CardTopic i{
   display: none;
 }
@@ -212,6 +227,10 @@ label{
   border: 1px solid #d0d0d0;
   background-color: #FFF;
   border-radius: 0;
+}
+.ui-inputfield[readonly='readonly'], .ui-inputfield.Opac50{
+  background-color: #f3f3f3;
+  cursor: default;
 }
 .ui-outputlabel{
   color: #000;
@@ -260,6 +279,7 @@ form[id="resultForm"]{
   display: inline;
   position: relative;
   top: -4px;
+  line-height: 22px;
 }
 .ui-chkbox .ui-chkbox-box {
   background: none;
@@ -338,6 +358,9 @@ form[id="resultForm"]{
   border: 1px solid #d0d0d0 !important;
   border-radius: 0 !important;
 }
+.ui-dialog .ui-selectonemenu.Opac50 label{
+  background-color: #f3f3f3 !important;  
+}
 .ui-selectonemenu .ui-selectonemenu-trigger, .ui-selectonemenu .ui-selectonemenu-trigger.ui-state-hover, .ui-selectonemenu .ui-selectonemenu-trigger.ui-state-focus {
   color: #ffffff !important;
   background-color: #FFF;
@@ -392,6 +415,7 @@ form[id="resultForm"]{
 .ui-selectonemenu-panel .ui-selectonemenu-item-group:first-letter{
   text-transform: uppercase;
 }
+
 
 /** Botones */
 .ui-button, .ui-button.ui-state-focus, .ui-button.ui-state-active{
@@ -788,6 +812,11 @@ table tbody tr td{
   background-size: 100% !important;
 }
 
+.ui-dialog .ui-datatable-tablewrapper{
+  max-height: 400px;
+  overflow-y: auto;
+}
+
 /** Editor */
 .ui-editor {
   border: 1px #d0d0d0 solid;
@@ -830,6 +859,12 @@ table tbody tr td{
   border-color: #60c9de !important;
 }
 
+/** Columntoggler */
+.ui-columntoggler .ui-columntoggler-item label{
+  text-align: left;
+  top: 7px;
+}
+
 /** Estilos especificos de formularios */
 /* formación */
 #buscadorCursosForm label{
@@ -839,4 +874,23 @@ table tbody tr td{
 #buscadorCursosForm .ui-datatable table tbody tr td:nth-child(3), #buscadorCursosForm .ui-datatable table tbody tr td:nth-child(4){
   text-align: center;
 }
+.fa-file-excel-o.Green{
+  color: #FFF !important;
+}
+
+@media all and (max-width:690px){
+	.ui-outputlabel, label { 
+    justify-content: flex-start;   
+    align-items: flex-end;
+  }
+  .ui-panelgrid-cell>span{
+    width: 100%;
+  }
+  .ui-dialog .ui-button{
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+}
+
+
 
