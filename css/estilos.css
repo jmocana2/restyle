@@ -63,6 +63,9 @@ body{
   margin: 0 auto;
   float: none;
 }
+.Container100 > form{
+  min-height: calc(100vh - 385px);
+}
 .bubble {
   background-color: #f74741;
   border-radius: 50%;
@@ -579,7 +582,7 @@ table tbody tr td{
   font-weight: 400 !important;
   padding: 15px 10px !important;
   text-transform: lowercase;
-  transition: 0s !important;
+  transition: 0.4s !important;
 }
 .ui-datatable table tbody tr td::first-letter{
   text-transform: uppercase;
@@ -588,8 +591,8 @@ table tbody tr td{
   background-color: #fbfbfb;
 }
 .ui-datatable table tbody .ui-state-hover > td, .ui-datatable table tbody .ui-state-highlight > td{
-  background-color: #4c4c4c;
-  color: #FFF;
+  background-color: #d0d0d0;
+  color: #000;
   transition: 0s !important;
 }
 .ui-datatable .ui-paginator .ui-paginator-pages .ui-paginator-page{
@@ -847,10 +850,9 @@ table tbody tr td{
   color: #000;
   font-family: 'Gotham Bold', Helvetica, Arial, sans-serif;
   font-weight: 700 !important;
-  border-bottom: none;
-  border-radius: 0 !important;
   background-color: #f3f3f3;
   text-transform: uppercase;
+  border: 1px solid #d0d0d0 !important;
 }
 
 /** Mensajes */
@@ -876,6 +878,51 @@ table tbody tr td{
 }
 .fa-file-excel-o.Green{
   color: #FFF !important;
+}
+
+/** Estilos formación */
+#reclamacionCursosForm .ui-outputlabel{
+  justify-content: flex-start;
+}
+
+#historicoCursosForm .ui-datatable table tbody tr td, #fichaFormacionEmpleadoForm .ui-datatable table tbody tr td,
+#fichaJustificacionNoAsistenciaForm .ui-datatable table tbody tr td{
+  text-align: center;
+}
+
+/** Login */
+.WidAutoOnMobile > img{
+  max-width: 170px !important;
+}
+
+#loginForm .ui-button{
+  color: #ffffff;
+  background-color: #f95752 !important;
+  transition: 0.5s;
+}
+#loginForm .ui-button .ui-icon{
+  color: #FFF !important;
+}
+#loginForm .GrayButton .ui-button-text{
+  color: #ffffff;
+  background-color: #f95752 !important;
+  transition: 0.5s;
+}
+#loginForm .ui-button.ui-state-hover, #loginForm .ui-button.ui-state-hover .ui-button-text{
+  background-color: #000 !important;
+}
+#loginForm .Card{
+  font-family: "Gotham Medium",Helvetica,Arial,sans-serif !important;
+  font-weight: 500 !important;
+}
+#loginForm .Card b{
+  font-family: "Gotham Medium",Helvetica,Arial,sans-serif !important;
+  font-weight: 500 !important;
+}
+#loginForm .ui-inputfield{
+  font-size: 14px !important;
+  color: #000 !important;
+  text-align: left;
 }
 
 @media all and (max-width:690px){
