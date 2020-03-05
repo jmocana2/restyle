@@ -1,5 +1,5 @@
-@import 'estilosAtresmedia.css?UPDATE=202003041630';
-@import 'distributiva.css';
+@import 'estilosAtresmedia.css?UPDATE=202003051323';
+@import 'distributiva.css?UPDATE=202003051312';
 
 @font-face { 
   font-family: 'Gotham Book'; 
@@ -869,6 +869,10 @@ table tbody tr td{
   max-height: 400px;
   overflow-y: auto;
 }
+.ui-widget-overlay{
+  background: #000;
+  opacity: 0.5;
+}
 
 /** Editor */
 .ui-editor {
@@ -933,6 +937,10 @@ table tbody tr td{
 }
 .ui-menu .ui-menu-list .ui-menuitem .ui-state-hover{
   background-color: transparent;
+}
+.ui-menuitem .ui-menuitem {
+  padding-left: 30px;
+  background-color: #000 !important;
 }
 .ui-menuitem .ui-menuitem .ui-menuitem {
   padding-left: 30px;

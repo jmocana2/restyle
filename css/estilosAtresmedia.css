@@ -1773,7 +1773,7 @@ a.ui-commandlink:hover{
 	text-transform: lowercase;
 	padding-top: 2px;
 }
-.ui-breadcrumb ul li .ui-menuitem-link.disabled{
+.ui-breadcrumb ul li .ui-menuitem-link.ui-state-disabled{
 	opacity: 1 !important;
 }
 .ui-breadcrumb ul li .ui-menuitem-link:first-letter{
