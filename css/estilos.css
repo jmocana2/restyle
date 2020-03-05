@@ -1,4 +1,4 @@
-@import 'estilosAtresmedia.css';
+@import 'estilosAtresmedia.css?UPDATE=202003041630';
 @import 'distributiva.css';
 
 @font-face { 
@@ -35,6 +35,9 @@
 /** Commons */
 body{
   background-color: #FFF;
+}
+a:hover{
+  color: #f95752 !important
 }
 .ShadowEffect{
   box-shadow: none;
@@ -76,12 +79,13 @@ body{
   padding: 0 !important;
   border: 1px #FFF solid !important;
   position: relative;
-  left: -8px;
+  left: -5px;
   width: 20px;
   height: 20px;
   line-height: 20px;
   display: inline-block;
   text-align: center;
+  padding: 3px !important;
 }
 .enlaceMenuModulo i{
   color: #000 !important;
@@ -117,6 +121,8 @@ body{
 .ui-widget{
   font-family: 'Gotham Book', Helvetica, Arial, sans-serif !important;
   font-weight: 400 !important;
+  color: #000;
+  font-size: 16px;
 }
 /* .ui-widget .ui-widget{
   font-family: 'Gotham Medium', Helvetica, Arial, sans-serif !important;
@@ -203,11 +209,25 @@ body{
   color: #000;
   text-transform: uppercase;
 }
+.CardBigTopic {
+  font-family: 'Gotham Medium', Helvetica, Arial, sans-serif;
+  font-weight: 500 !important;
+  font-size: 19px;
+  color: #000;
+  padding-top: 15px;
+}
 .CardBigTopic > .ui-outputlabel{
   display: inline;
 }
 .CardTopic i{
   display: none;
+}
+.CardSmallTopic.cabecera {
+  padding-top: 0 !important;
+  background: #FFF !important;
+}
+.Card.cabecera{
+  border-radius: 0 !important;
 }
 
 /** Formularios */
@@ -460,9 +480,10 @@ form[id="resultForm"]{
 .GrayButton .ui-button-text, .GrayButton.ui-state-focus .ui-button-text, .GrayButton.ui-state-active .ui-button-text{
   border-radius: 0px !important;
   font-size: 15px;
-  font-family: 'Gotham Bold', Helvetica, Arial, sans-serif;
+  font-family: 'Gotham Bold', Helvetica, Arial, sans-serif !important;
   font-weight: 700 !important;
-  color: #ffffff;
+  color: #ffffff !important;
+  background: #000 !important;
   background-color: #000 !important;
   text-transform: uppercase;
   box-shadow: none !important;
@@ -478,13 +499,13 @@ form[id="resultForm"]{
 }
 .contenedorBotonera .ui-button.ui-state-hover, .contenedorBotonera .GrayButton.ui-state-hover .ui-button-text, .contenedorBotonera .ui-button:first-child.ui-state-hover, .contenedorBotonera .GrayButton:first-child.ui-state-hover .ui-button-text{
   background-color: #000 !important;
-  color: #FFF
+  color: #FFF !important;
 }
 /* ghost */
 .contenedorBotonera .ui-button:first-child, .contenedorBotonera .ui-button:first-child.ui-state-focus,.contenedorBotonera .GrayButton:first-child .ui-button-text{
 background-color: #FFF !important;
 border: 2px #000 solid;
-color: #000;
+color: #000 !important;
 }
 
   /** Tablas */
@@ -496,7 +517,7 @@ color: #000;
   border: none;
 }
 .ui-datatable table thead tr th.ui-state-hover{
-  background-color: #e7e7e7 !important;
+  background-color: #EEE !important;
   color: #000;
 }
 .ui-datatable .ui-datatable-header{
@@ -508,6 +529,12 @@ color: #000;
   font-family: 'Gotham Medium', Helvetica, Arial, sans-serif;
   font-weight: 500 !important;
   text-transform: uppercase;
+}
+.ui-datatable .ui-datatable-footer{
+  font-family: 'Gotham Book', Helvetica, Arial, sans-serif;
+  background-color: transparent;
+  border-radius: 0px !important;
+  font-size: 15px;
 }
 .ui-datatable .ui-datagrid-header, .ui-datatable .ui-datatable-header, .ui-datatable .ui-datatable-subtable-header, .ui-datatable .ui-datatable-summaryrow{
   border: none !important;
@@ -568,42 +595,52 @@ table tbody tr td{
 }  
 
 .ui-datatable table thead tr th, .ui-datatable table tfoot tr td, .ui-datatable table thead tr th {
-  color: #000;
-  background-color: transparent;
+  color: #000 !important;
+  background-color: transparent !important;
   border: none;
   outline: none;
   padding: 10px;
-  font-family: 'Gotham Medium', Helvetica, Arial, sans-serif;
+  font-family: 'Gotham Medium', Helvetica, Arial, sans-serif !important;
   font-weight: 500 !important;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 14px !important;
 }
 .ui-datatable table thead tr th.ui-state-active, .ui-datatable table thead tr th.ui-state-focus, .ui-datatable .ui-datatable-sticky table thead tr th.ui-state-active {
-  background-color: #d0d0d0 !important;
+  background-color: #EEE !important;
   color: #000;
 }
 .ui-datatable table thead tr th.ui-state-focus{
-  background-color: #d0d0d0 !important;
+  background-color: #EEE !important;
+}
+.ui-datatable table thead tr th span{
+  padding-top: 5px 0;
+}
+.ui-datatable table thead tr th input{
+  margin-bottom: 5px;
 }
 .ui-datatable table tbody tr td {
   color: #000;
   border:none !important;
   border-bottom: 1px solid #e7e7e7 !important;
-  font-size: 14px;
-  font-family: 'Gotham Book', Helvetica, Arial, sans-serif;
+  font-size: 14px !important;
+  font-family: 'Gotham Book', Helvetica, Arial, sans-serif !important;
   font-weight: 400 !important;
   padding: 15px 10px !important;
   text-transform: lowercase;
   transition: 0.4s !important;
+  text-align: center !important;
 }
+.ui-datatable table tbody tr td a{
+  font-size: 14px !important;
+}
+
 .ui-datatable table tbody tr td::first-letter{
   text-transform: uppercase;
 }
 .ui-datatable .ui-datatable-even, .ui-datatable .ui-datatable-odd{
-  background-color: #fbfbfb;
+  background-color: #FFF;
 }
 .ui-datatable table tbody .ui-state-hover > td, .ui-datatable table tbody .ui-state-highlight > td{
-  background-color: #e7e7e7;
+  background-color: #EEE;
   color: #000;
   transition: 0s !important;
 }
@@ -856,17 +893,18 @@ table tbody tr td{
 /** Panel */
 .ui-panel{
   border: 1px solid #d0d0d0;
-  background-color: #e7e7e7;
+  background-color: #FFF;
 }
 .ui-panel .ui-panel-titlebar {
   font-size: 14px;
   color: #000;
   font-family: 'Gotham Bold', Helvetica, Arial, sans-serif;
   font-weight: 700 !important;
-  background-color: #e7e7e7;
+  background-color: #eee;
   text-transform: uppercase;
   border: none !important;
   margin: 0 !important;
+  padding: 13px 10px 8px 10px !important;
 }
 
 /** Mensajes */
@@ -879,6 +917,54 @@ table tbody tr td{
 .ui-columntoggler .ui-columntoggler-item label{
   text-align: left;
   top: 7px;
+}
+
+/** Menu tooltip */
+.ui-menu{
+  border: 1px #000 solid;
+}
+.ui-menu .ui-menuitem .ui-menuitem-link {
+  color: #000;
+  font-family: 'Gotham Book', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+.ui-menu .ui-menuitem .ui-menuitem-link:hover{
+ color: #f95752
+}
+.ui-menu .ui-menu-list .ui-menuitem .ui-state-hover{
+  background-color: transparent;
+}
+.ui-menuitem .ui-menuitem .ui-menuitem {
+  padding-left: 30px;
+  background-color: #000 !important;
+}
+
+/** picklist */
+.ui-picklist .ui-picklist-caption {
+  border: solid 1px #000;
+  background-color: #FFF;
+  color: #000;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom: solid 1px #999 !important;
+}
+.ui-picklist .ui-picklist-list {
+  border: solid 1px #000;
+
+  background-color: #FFF;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+
+}
+.ui-picklist .ui-picklist-list .ui-state-hover table tbody tr td, .ui-picklist .ui-picklist-list .ui-state-hover{
+  background-color: #EAEAEA !important;
+  color: #000 !important;
+} 
+.ui-picklist .ui-picklist-list .ui-state-highlight{
+  background-color: #f95752 !important;
+}
+.ui-picklist.ui-picklist-responsive .ui-picklist-buttons button {
+  background-color: #000; 
 }
 
 /** Estilos especificos de formularios */

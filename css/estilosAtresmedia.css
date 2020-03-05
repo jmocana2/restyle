@@ -454,6 +454,10 @@ mejora mensajes de error
 	text-decoration: underline !important;
 }
 
+.enlaceNegro.noSubrayado:hover{	
+	text-decoration: none !important;
+}
+
 .enlaceBlanco{
 	color: #fff !important;
 	text-decoration: none !important;
@@ -790,12 +794,6 @@ componente carousel
     font-size: 1.2rem !important;
 }
 
-.bubble.contadorSolicitudesPendientes{
-	float: right !important;
-    position: relative;
-    left: 10px;
-}
-
 .bubble.contadorNotificaciones{
     position: relative;
     top: 12px;
@@ -966,6 +964,7 @@ componente carousel
 }
 .ui-panelmenu .ui-icon{
 	font-size: 18px;
+	top: -2px;
 }
 
 /*modulos*/
@@ -1032,7 +1031,7 @@ componente carousel
 
 .ui-panelgrid{font-size:14px !important;}
 .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem a {
-		font-size: 16px;
+		font-size: 15px;
 		padding: 15px 0 15px 40px !important
 }
 
@@ -1171,64 +1170,6 @@ componente carousel
 	width: 100%;
 }
 
-/*tabla home*/
-
-.tablaHome{
-
-}
-
-
-.tablaHome .ui-datatable-tablewrapper {
-    margin-top: 4px;
-    /*margin-left: 0px; para fondo blanco*/
-    margin-left: -4px; /*para fondo rayado*/
-    width: 100% !important;
-}
-
-
-.tablaHome.ui-datatable table thead tr th,
-.tablaHome.ui-datatable table tfoot tr td,
-.tablaHome.ui-datatable table thead tr th {
-    color: #000 !important;
-    background-color: transparent !important;
-    border: none !important;
-    outline: none !important;
-    padding: 0px !important;
-}
-
-.tablaHome.ui-datatable {
-    border: none !important;
-    background-color: transparent !important;
-    color: #000 !important;
-}
-
-.tablaHome.ui-datatable table tbody td {
-    padding: 10px 10px !important;
-}
-
-.tablaHome.ui-datatable table tbody tr td {
-    color: #003d50 !important;
-    border: none !important;
-}
-
-
-.tablaHome.ui-datatable table tbody tr td a,
-.ui-dialog .ui-datatable table tbody tr td a{
-	/*right: 10px;*/	
-	 font-size: 12px !important;
-	 text-decoration: none !important;
-	 color: #666 !important;
-}
-
-.tablaHome.ui-datatable table tbody tr td a:hover,
-.ui-dialog .ui-datatable table tbody tr td a:hover{
-    color: #000 !important;
-    border: none !important;
-    font-size: 12px !important;
-    text-decoration: none !important;
-    /*text-decoration: underline !important;*/
-}
-
 .tablaSolicitudesPendientes.ui-datatable table tbody tr td a{
 	/*right: 10px;*/	
 	 font-size: 12px !important;
@@ -1247,31 +1188,6 @@ componente carousel
     border: none !important;
     font-size: 12px !important;
     text-decoration: none !important;
-}
-
-.tablaHome.ui-datatable .ui-datatable-even{
-    background-color: #FFF !important;
-}
-
-.tablaHome.ui-datatable .ui-datatable-odd {
-	background-color: #f0f2f4 !important;
-	/*background-color: #FFF !important;*/
-}
-
-.tablaHome .celdaFecha{
-	position: relative !important;
-	left: -10px !important;
-}
-
-.tablaHome .celdaId{
-	position: relative !important;
-	left: -5px !important;
-}
-
-.tablaHome .ui-panelgrid{
-	background-color: #cdd9e0 !important;
-	border: none !important;
-	border-radius: 2px;
 }
 
 .panelGridDetalleHome{
@@ -1303,15 +1219,6 @@ componente carousel
 a.ui-commandlink:hover{
 	color: #000 !important;
 }*/
-
-/*aplicar este estilo de enlaces dentro de los dialogos y las tablas, respetando el menu derecho*/
-.ui-dialog  a.ui-commandlink:hover i,
-.ui-datatable  a.ui-commandlink:hover i
-{color: #000 !important;}
-
-.ui-dialog  a.ui-commandlink:hover,
-.ui-datatable  a.ui-commandlink:hover
-{color: #000 !important;} 
 
 /*----------------*/
 
@@ -1346,7 +1253,7 @@ a.ui-commandlink:hover{
 
 
 .rojoTenue {
-    background-color: #F78181 !important;
+    background-color: #ff8e8a !important;
 }
 
 
@@ -1862,9 +1769,12 @@ a.ui-commandlink:hover{
 
 .ui-breadcrumb ul li .ui-menuitem-link {
 	font-size: 16px;
-	color: #000;
+	color: #000 !important;
 	text-transform: lowercase;
 	padding-top: 2px;
+}
+.ui-breadcrumb ul li .ui-menuitem-link.disabled{
+	opacity: 1 !important;
 }
 .ui-breadcrumb ul li .ui-menuitem-link:first-letter{
 	text-transform: uppercase;
