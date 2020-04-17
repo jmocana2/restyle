@@ -555,6 +555,10 @@ table tbody tr td{
   background-color: transparent !important;
 }
 
+table .ui-panelgrid-cell{
+  display: table-cell;
+}
+
 /** Paginación */
 .ui-paginator-top, .ui-paginator-bottom{
   background-color: #FFF;
@@ -975,6 +979,11 @@ table tbody tr td{
   background-color: #000; 
 }
 
+/** panelgrid */
+.ui-panelgrid tbody tr td{
+  border-color: #FFF !important;
+}
+
 /** Estilos especificos de formularios */
 /* formación */
 #buscadorCursosForm label{
@@ -1031,6 +1040,12 @@ table tbody tr td{
   font-size: 14px !important;
   color: #000 !important;
   text-align: left;
+}
+
+/* Factura */
+#facturaRentingForm #j_idt40{
+  margin-left: 541px;
+  margin-top: 4px;
 }
 
 @media all and (max-width:690px){
