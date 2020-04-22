@@ -475,7 +475,10 @@ form[id="resultForm"]{
   background-color: #000;
   border-radius: 0 !important;
   box-shadow: none !important;
-  padding: 12px 20px 10px 40px !important;
+  padding: 12px 20px 10px 20px !important;
+}
+.ui-icon + .ui-button-text{
+  padding-left: 38px !important;
 }
 .GrayButton .ui-button-text, .GrayButton.ui-state-focus .ui-button-text, .GrayButton.ui-state-active .ui-button-text{
   border-radius: 0px !important;
